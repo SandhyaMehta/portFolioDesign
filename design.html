@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <title>bootstarp!</title>
+</head>
+<style>
+    #background-image
+    {
+        background-image: url(img/wave\ \(3\).png);
+        background-repeat: none;
+        background-size: cover;
+    }
+    .border1
+    {
+       
+        border: 1px  solid rgb(247, 241, 241);
+        border-radius: 150px;
+        width: 100px;
+        box-shadow: 1px 25px 25px 9px rgb(238, 236, 236);
+    }
+    .overlay
+    {
+        position: absolute;;
+        border: 1px solid rgb(224, 221, 221);
+        box-shadow: 1px 25px 25px 9px rgb(238, 236, 236);
+    }
+    .overlay1
+    {
+      position: absolute;
+      margin-left: 100px;  
+      z-index: -1;
+      border: 2px solid gray;
+      margin-top: 0px;
+      
+    }
+
+    .overlay1:hover
+    {  
+      z-index: 4;
+    }
+    .border4
+    {
+        border-radius: 10px;
+        height: 50px;
+        width: 240px;
+        background-color: rgb(5, 5, 71);
+       
+    }
+    .border4:hover
+    {
+      transform: translateY(-5px);
+      display:inline-block;
+     
+    }
+  #back-color {
+ 
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: back-color 15s ease infinite;
+
+  color: aliceblue;
+}
+
+
+
+@keyframes back-color{
+  0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.borderA
+{
+  border-radius:100px;
+  text-decoration:none;
+  
+}
+.borderA:hover
+{
+  transform: translateY(-10px);
+  display: inline-block;
+  
+}
+
+#border-b
+{
+  border-bottom: 1px solid rgb(206, 206, 205);
+}
+#border-b:hover
+{
+ border-bottom: 2px solid rgb(241, 168, 31);
+ 
+}
+
+
+   
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg  " style="background-color: rgb(202, 212, 212);">
+    <div class="container-fluid">
+      <a class="navbar-brand justify-content-center" href="#"><img src="img/logo (2).png" height=" 200px" width="200px" alt="" class="img-fluid" ></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item ">
+            <a class="nav-link active" aria-current="page" href="#">FEATURES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PRICING</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">DEMO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> <button type="button"   class=" p-2 btn   text-light bg-primary"  style= "width:100px">sign up</button></a>
+          </li>
+          
+            <li class="nav-item dropdown d-flex">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="img/indF.png" alt="" height="20px" width="20px" class="img-fluid me-2">En 
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              
+              </li>
+          
+         
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+    <div class="container-fluid overflow-hidden m-0 p-0">
+        <div class="row justify-content-center" id="background-image">
+            <div class="col-md-6  mt-3 mb-5 " id="block">
+                
+                <h1 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; margin-top: 150px; font-size:55px; font-weight: lighter; color: rgb(90, 88, 88);">
+                    Create your own Social Network
+                </h1>
+                <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;color: rgb(90, 88, 88); font-size: 20px;">
+                    Build your own customized social network with unlimited members - no coding needed.
+                </p>
+                <form class="d-flex mt-5 ">
+                    <input class="form-control p-2 " type="search" placeholder="Email Address" aria-label="Search" style="width:250px;"  ><button class="btn btn-outline-success  text-light" type="submit" style="width:100px; background-color: rgb(128, 14, 235);">sign up</button>
+                   
+                  </form>
+                  <p class="mt-5" style="font-size:12px;">
+                    Free 14-day trial, no credit card required.
+                  </p>
+            </div>
+            <div class="col-md-5  mb-5">
+                
+                  <img src="img/hero.png" alt=""  class="img-fluid"  class="img-fluid mt-5">
+                </div>
+            </div>
+            <div class="row  justify-content-center">
+                
+                <div class="col-md-2 mt-5 mb-5 " id="border-b">
+                 <img src="img/Couple_25426.png" alt="" style="height: 100px; width: 100px; padding: 10px;" class="border1">
+                 <p style="font-size:25px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Members</p>
+                </div>
+                <div class="col-md-2 mt-5 mb-5 "  id="border-b">
+                    <img src="img/pvideo.webp" alt="" style="height: 100px; width: 100px; padding: 10px;" class="border1">
+                    <p  style="font-size:25px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Photo & Videos</p>
+                </div>
+                <div class="col-md-2 mt-5 mb-5 "  id="border-b">
+                    <img src="img/3995725.png" alt="" style="height: 100px; width: 100px; padding: 10px;" class="border1">
+                     <p  style="font-size:25px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;padding-left: 19px;">Events</p>
+                </div>
+                <div class="col-md-2 mt-5 mb-5 "  id="border-b">
+                    <img src="img/form.png" alt="" style="height: 100px; width: 100px; padding: 10px;" class="border1">
+                    <p  style="font-size:25px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Activities</p>
+                </div>
+                <div class="col-md-2 mt-5 mb-5 " id="border-b">
+                    <img src="img/134909.png" alt="" style="height: 100px; width: 100px; padding: 10px;" class="border1">
+                     <p  style="font-size:25px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; padding-left: 22px;">Chat</p>
+                </div>
+             
+
+            </div>  
+               <div class="row justify-content-center">
+                <div class="col-md-6 text-center mt-5 mb-5">
+                   <div class="overlay"> <img src="img/members3.svg" alt="" class="img-fluid " style="height: 300px; width: 250px; margin-left:50px; "></div>
+                    <div class="overlay1"> <img src="img/members1.svg" alt="" class="img-fluid " style="height: 300px; width: 250px;" ></div>
+                    
+                    
+                </div>
+                <div class="col-md-4 mt-5 mb-5">
+                    <p style="font-size:25px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size:30px; color: rgb(65, 64, 64);">Members</p>
+                     <p style="font-family:Arial, Helvetica, sans-serif; font-size: 20px; color: rgb(173, 172, 172);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Cumque, error?
+                        <br>
+                         Quaerat amet voluptas molestiae fugiat quod libero <br>  reiciendis officia obcaecati facilis explicabo fugit ab br ipsa perspiciatis quos eum, commodi cupiditate?</p>
+                </div>
+        </div>
+        <div class="row justify-content-evenly" style="background-color: rgb(210, 236, 236);">
+            <div class="col-md-5  ">
+               <h1 style="margin-top: 100px; font-family:'Times New Roman', Times, serif;"> Secure Cloud Hosting</h1> 
+               <p style="font-family:Arial, Helvetica, sans-serif; font-size:20px;">  Take advantage of the full power of our fast  and secure <br> cloud and forget your worries  about hosting, server <br> administration and software updates.</p>
+            </div>
+            <div class="col-md-5  mt-5 mb-5 text-center">
+                <img src="img/cloud.png" alt="" class="img-fluid" style="width: 300px; height: 300px;" >
+            </div>
+        </div>
+        <div class="row justify-content-evenly" style="background-color: rgb(210, 236, 236);">
+            <div class="col-md-5  mt-5 mb-5 text-center">
+                <img src="img/mobile.png" alt="" class="img-fluid" style="width: 300px; height: 300px;" >
+            </div>
+            <div class="col-md-5  mt-5 mb-5">
+               <h1 style="margin-top: 100px; font-family:'Times New Roman', Times, serif;"> Ready for Mobile</h1> 
+               <p style="font-family:Arial, Helvetica, sans-serif; font-size:20px;">Create an online community that looks great on any device <br> and use it anywhere you are - on your mobile phone, your <br> tablet and of course your desktop device.</p>
+            </div>
+           
+        </div>
+        <div class="row" style="background-color: rgb(210, 236, 236);">
+            <div class="col-md-12 mt-5 mb-5 text-center">
+              <h1 style="margin-top: 100px;" >
+                Building a modern and feature-rich <br>
+                 community has never been easier.</h1>  
+               <p style="font-family:Arial, Helvetica, sans-serif; font-size:20px; margin-top: 20px;">
+                No need to struggle with coding and hosting - use the power <br> of our cloud-based social website builder to create your very <br> own, customized community portal with no hassle.</p>  
+            </div>
+        </div>
+        <div class="row justify-content-evenly" id="back-color">
+          <div class="col-md-3 mt-4 mb-5 text-center">
+            <p  style="font-family:Arial, Helvetica, sans-serif; font-size:20px; margin-top: 20px;">
+              Let's get started!
+            </p>
+          </div>
+          <div class="col-md-4  mt-5 mb-5 text-center">
+            <pn  style="font-family:Arial, Helvetica, sans-serif; font-size:20px; margin-top: 20px;">
+              Build your own Social Network today.
+            </p>
+          </div>
+          <div class="col-md-3  text-center">
+            <div class="col-md-2   me-3 " style="margin-top:15px;">
+              <button  class="button border4 m-5"><a href="#" style="text-decoration: none; color:rgb(248, 249, 253);">Create Social Network</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly">
+          
+          <div class="col-md-8  d-flex mt-5 mb-5">
+             <p style="font-size:12px; margin-left:15px; opacity: 0.3;">
+               ©2023 groupanic 
+             </p>
+          
+         
+            <p style="font-size:12px; margin-left:15px; opacity: 0.3;">
+              Privacy Policy 
+            </p>
+         
+         
+             <p style="font-size:12px; margin-left:15px; opacity: 0.3;">
+              Terms of Service
+             </p>
+           </div>
+          <div class="col-md-2  mt-5 mb-5 d-flex">
+              <p style="font-size:16px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" >
+                SUPPORT
+              </p>
+              <h4 style="margin-left:20px;">
+                <a href="design.html"><img src="img/523835.png" alt="" height="40px" width="40px" class="img-fluid border borderA p-2 " ></a>  
+              </h4>
+          </div>
+
+        </div>
+
+        
+
+            
+
+    </div>
+   
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</body>
+</html>

@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
+  <title>bootstarp!</title>
+</head>
+<style>
+  @media screen  and (max-width:1000px){
+    #non-display
+    {
+      display: none;
+    }
+    
+  }
+     .box
+     {
+        position: absolute;
+        width: 200px;
+        height: 150px;
+        background-color: rgb(23, 41, 41);
+        border-radius: 5px;
+        text-align:center;
+        transition: all 0.5s ease-out;
+     }
+
+     .hide
+     {
+        left:-1000px;
+        top:50%;
+        opacity:0;
+     }
+
+     .view
+     {
+        left: 50px;
+        top:50px;
+        opacity:1;
+        transform:translate(-50%, 50%);
+     }
+
+    
+    .Animations:hover 
+    {
+       transform: translate(0px ,-150px);
+       display: inline;
+       height: 300px;
+       width: 300px;
+       border: 2px solid red;
+       border-radius: 150px;
+      
+      
+     }
+     .box1 
+     {
+      grid-template-columns: auto auto auto;
+      gap:0px 10px;
+     }
+
+    .Animations1:hover 
+    {
+       transform: translate(0px ,-100px);
+       display: inline;
+       
+       border: 2px solid red;
+       border-radius: 150px;
+      
+       transition-duration:3s;
+      
+     }
+     .Animations2:hover 
+    {
+       transform: translate(0px ,-100px);
+       display: inline;
+       
+       border: 2px solid red;
+       border-radius: 150px;
+      
+       transition-duration:3s;
+      
+     }
+     #more {display: none;}
+     .flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  perspective: 1000px;
+
+ 
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+    
+    
+    
+ 
+    
+     
+</style>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="img/logo (1).png" height="150px" width="150px" alt="" class="img-fluid"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
+                <ul class="navbar-nav">
+                    <div class="w3-dropdown-hover">
+                        <button class="w3-button text-white">Home</button>
+                        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                          <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                          <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                          <a href="#" class="w3-bar-item w3-button">Link 3</a>
+                        </div>
+                      </div>
+                      <div class="w3-dropdown-hover">
+                        <button class="w3-button text-white">Contact</button>
+                        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                          <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                          <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                          <a href="#" class="w3-bar-item w3-button">Link 3</a>
+                        </div>
+                      </div>
+                      <div class="w3-dropdown-hover">
+                        <button class="w3-button text-white">Containt</button>
+                        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                          <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                          <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                          <a href="#" class="w3-bar-item w3-button">Link 3</a>
+                        </div>
+                      </div>
+                      <div class="w3-dropdown-hover">
+                        <button class="w3-button text-white">Price</button>
+                        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                          <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                          <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                          <a href="#" class="w3-bar-item w3-button">Link 3</a>
+                        </div>
+                      </div>
+                      <div class="w3-dropdown-hover">
+                        <button class="w3-button text-white"></button>
+                        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                          <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                          <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                          <a href="#" class="w3-bar-item w3-button">Link 3</a>
+                        </div>
+                      </div>
+                      
+                    </ul>
+                    <form class="d-flex ">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                      </form>
+              </div>
+            </div>
+          </nav>
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" style="height: 400px;">
+              <div class="carousel-item active">
+                <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/114.webp" class="d-block w-100" alt="..."  style="height: 400px;">
+                <div class="carousel-caption d-none d-md-block">
+                    <div id="box" class="box hide bg-primary">
+                        hello
+                     </div>
+                     <button type="button" class="btn btn-outline-light" id="button">button</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/115.webp" class="d-block w-100" alt="..."  style="height: 400px;">
+                <div class="carousel-caption d-none d-md-block">
+                    
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/116.webp" class="d-block w-100" alt="..."  style="height: 400px;">
+                <div class="carousel-caption d-none d-md-block">
+                    
+                  </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div> 
+          <div class="container-fluid">
+            <div class="row justify-content-evenly">
+                <div class="col-md-5 mt-5 mb-5">
+                    <div class="w3-row-padding">
+                        <div class="w3-col s3 w3-container">
+                        <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Nature');">
+                          <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/112.webp" alt="Nature" style="width:100%">
+                        </a>
+                        </div>
+                        <div class="w3-col s3 w3-container">
+                          <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Snow');">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/113.webp" alt="Snow" style="width:100%">
+                          </a>
+                        </div>
+                        <div class="w3-col s3 w3-container">
+                          <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Mountains');">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/117.webp" alt="Mountains" style="width:100%">
+                          </a>
+                        </div>
+                        <div class="w3-col s3 w3-container">
+                          <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Lights');">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/116.webp" alt="Lights" style="width:100%">
+                          </a>
+                        </div>
+                      </div><br>
+                      
+                      <div id="Nature" class="picture w3-display-container" style="display:none">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/112.webp" alt="Nature" style="width:100%">
+                        <span onclick="this.parentElement.style.display='none'" 
+                        class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+                        <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Nature</div>
+                      </div>
+                      
+                      <div id="Snow" class="picture w3-display-container" style="display:none">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/113.webp" alt="Snow" style="width:100%">
+                        <span onclick="this.parentElement.style.display='none'" 
+                        class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+                        <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Snow</div>
+                      </div>
+                      
+                      <div id="Mountains" class="picture w3-display-container" style="display:none">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/117.webp" alt="Mountains" style="width:100%">
+                        <span onclick="this.parentElement.style.display='none'" 
+                        class="w3-display-topright w3-button w3-transparent">&times;</span>
+                        <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Mountains</div>
+                      </div>
+                      
+                      <div id="Lights" class="picture w3-display-container" style="display:none">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/116.webp" alt="Lights" style="width:100%">
+                        <span onclick="this.parentElement.style.display='none'" 
+                        class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+                        <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Northern Lights</div>
+                      </div>
+                      
+                      <script>
+                      function openImg(imgName) {
+                        var i, x;
+                        x = document.getElementsByClassName("picture");
+                        for (i = 0; i < x.length; i++) {
+                          x[i].style.display = "none";
+                        }
+                        document.getElementById(imgName).style.display = "block";
+                      }
+                      </script>
+                </div>
+                <div class="col-md-5 text-center mt-5 mb-5">
+                    <h1  style="font-size: 60px; font-weight: bolder; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif" >
+                        Our Vision
+                    </h1>  
+                    <p  style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color:rgb(22, 3, 3)">
+                        Ruth Handler watched her daughter
+                         Barbara play with paper dolls, 
+                         and noticed that she often enjoyed giving them adult roles.
+                          At the time, most children's toy dolls were representations of infants.
+                           Realizing that there could be a gap in the market, Handler suggested the idea of an adult-bodied doll to her husband Elliot, a co-founder of the Mattel toy company. 
+                        He was unenthusiastic about the idea, as were Mattel's directors.[10]
+                       </p>
+                       <p  style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color:rgb(19, 16, 16)">
+                        It is a well-known fact; we don’t value a thing until
+                        we lost it. Here from thing I mean the trees and plants. Human beings and animals, 
+                         all are wholly reliant on trees. 
+                         Largest portion of our food comes from plants and trees. 
+                       </p>
+
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12 mt-5 mb-5 text-center">
+                    <h1 style="  font-size:70px ;font-weight: bold;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                        Bootstrap Website Templates
+                    </h1> 
+                    <p  style=" font-weight: bold;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                      <span style="color:rgb(67, 129, 223)">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br></span>  
+                         Nisi beatae provident, ratione possimus debitis quia. <br>
+                         Neque vitae aspernatur ea perspiciatis. Eius ut blanditiis soluta <br>
+                          sunt reprehenderit voluptas at nihil iste.
+                    </p>
+                    
+                    
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="w3-display-container w3-text-white ">
+                    <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/123.webp" alt="Lights" class="infras_icon" style="width:100%" class="img-fluid">
+                    <div class="w3-display-bottommiddle w3-container text-light mb-5 " >
+                    <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/117.webp" alt="" class="infras_icon Animations" height="200px" width="200px">
+                     
+                      
+                  </div>
+                </div>
+                </div>
+            </div>
+            <div class="row ">
+              <div class="col-md-12 mt-5 mb-5 ">
+                <h1  style=" font-weight: 500;font-size: 60px; color:dark;font-family: Georgia, 'Times New Roman', Times, serif;" >
+                  Create a great website.
+               </h1>
+              <p  style=" font-weight: 500;font-size: 15px; color:dark;font-family: Georgia, 'Times New Roman', Times, serif;" >Start with a custom domain and get your business online now. Bring your free
+                  website and landing pages under one domain to keep your brand in harmony.
+                  Start with a custom domain and get your business online now. Bring your free
+                  website and landing pages under one domain to keep your brand in harmony.
+             </p>
+             <p style=" font-weight: 500;font-size: 15px; color:dark;font-family: Georgia, 'Times New Roman', Times, serif;" >
+              Technology today is evolving at a rapid pace, <br>
+              enabling faster change and progress, causing an acceleration of the rate of change. <br>
+               However, it is not only technology trends and emerging technologies that are evolving, <br>
+               a lot more has changed this year due to the outbreak of COVID-19 making IT professionals <br>
+              realize that their role will not stay the same in the contactless world tomorrow. <br>
+              And an IT professional in 2023-24 will constantly be learning, unlearning,  <br>
+              and relearning (out of necessity if not desire).
+
+             </p>
+             <p style=" font-weight: 500;font-size: 15px; color:dark;font-family: Georgia, 'Times New Roman', Times, serif;" >
+              Technology today is evolving at a rapid pace, 
+              enabling faster change and progress, causing an acceleration of the rate of change. 
+               However, it is not only technology trends and emerging technologies that are evolving, 
+               a lot more has changed this year due to the outbreak of COVID-19 making IT professionals 
+              realize that their role will not stay the same in the contactless world tomorrow. 
+              And an IT professional in 2023-24 will constantly be learning, unlearning,  
+              and relearning (out of necessity if not desire).
+
+             </p>
+                    
+              </div>
+            </div>
+
+            <div class="row ">
+              <div class="col-md-6">
+                <h1  style="font-size: 60px; font-weight: bolder; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif" >
+                  Our Vision
+                </h1>
+                <p>
+                  We enable SMEs in making the best use of emerging digital technologies to build stronger  <br>
+                  capabilities & seize growth opportunities in today’s ever-evolving digital economy.
+
+                   LET’S TALK
+                </p>
+                <p style=" font-weight: 500;font-size: 15px; color:dark;font-family: Georgia, 'Times New Roman', Times, serif;" >
+                  Technology today is evolving at a rapid pace, <br>
+                  enabling faster change and progress, causing an acceleration of the rate of change. <br>
+                   However, it is not only technology trends and emerging technologies that are evolving, <br>
+                   a lot more has changed this year due to the outbreak of COVID-19 making IT professionals <br>
+                  realize that their role will not stay the same in the contactless world tomorrow. <br>
+                  And an IT professional in 2023-24 will constantly be learning, unlearning,  <br>
+                  and relearning (out of necessity if not desire).
+    
+                 </p>
+              </div>
+              <div class="col-md-4 justify-content-center mt-5 mb-5 d-flex box1">
+                
+                 <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/020.webp" 
+                  alt="" class="infras_icon Animations1 img-fluid text-center" height="400px" width="400px" >
+                 
+              </div>
+            </div>
+            <div class="row ">
+              <div class="col-md-12 mt-5 mb-5 text-center">
+                <h1  style="font-size: 60px; font-weight: bolder; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif" >
+                  Our Vision
+                </h1>
+                <p>
+                  We enable SMEs in making the best use of emerging digital technologies to build stronger  <br>
+                  capabilities & seize growth opportunities in today’s ever-evolving digital economy.
+
+                   LET’S TALK
+                </p>
+                <h1  style="font-size: 60px; font-weight: bolder; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color:rgb(15, 147, 187);" >
+                 Create Animation
+                </h1>
+              </div>
+            </div>
+
+               <div class="row">
+                <div class="col-md-4 mt-5 mb-5 justify-content-center">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/021.webp" 
+                  alt="" class="infras_icon Animations2 img-fluid text-center" height="30px" width="300px" >
+                </div>
+                <div class="col-md-4  mt-5 mb-5 justify-content-center">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/022.webp" 
+                  alt="" class="infras_icon Animations2 img-fluid text-center" height="30px" width="300px" >
+                </div>
+                <div class="col-md-4   mt-5 mb-5 justify-content-center">
+                   <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/023.webp" 
+                  alt="" class="infras_icon Animations2 img-fluid text-center" height="30px" width="300px" >
+                </div>
+               </div>
+               <div class="row justify-content-evenly">
+                <div class="col-md-5 mt-5 mb-5">
+                  <h1  style="font-size: 60px; font-weight: bolder; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif" >
+                    We enable SMEs in making the best
+                  </h1>
+                  <p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+                    We enable SMEs in making the best use of emerging digital technologies to build stronger  <br>
+                    capabilities & seize growth opportunities in today’s ever-evolving digital economy.
+  
+                     LET’S TALK
+                  </p>
+                  <p style=" font-weight: 500;font-size: 15px; color:dark;font-family: Georgia, 'Times New Roman', Times, serif;" >
+                    Technology today is evolving at a rapid pace, <br>
+                    enabling faster change and progress, causing an acceleration of the rate of change. <br>
+                     However, it is not only technology trends and emerging technologies that are evolving, <br>
+                     a lot more has changed this year due to the outbreak of COVID-19 making IT professionals <br>
+                    realize that their role will not stay the same in the contactless world tomorrow. <br>
+                    And an IT professional in 2023-24 will constantly be learning, unlearning,  <br>
+                    and relearning (out of necessity if not desire).
+      
+                   </p>
+                     
+                </div>
+                <div class="col-md-5 mt-5 mb-5">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/012.webp" 
+                  alt="" class="infras_icon Animations3 img-fluid text-center" >
+                </div>
+
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-md-12 mt-5 mb-5">
+                    <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bolder;">
+                      Read More Read Less Button
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                       Phasellus imperdiet, nulla et dictum interdum, nisi lorem 
+                       egestas vitae scel<span id="dots">...</span>
+                       <span id="more">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/012.webp" alt=""  style="height:400px; width:400px;"  class="img-fluid">
+                      <br>
+                        
+                        erisque enim ligula venenatis dolor. Maecenas nisl est, 
+                       ultrices nec congue eget, auctor vitae massa. Fusce luctus 
+                       vestibulum augue ut aliquet. Nunc sagittis dictum nisi, 
+                       sed ullamcorper ipsum dignissim ac. In at libero
+                       sed nunc venenatis imperdiet sed ornare turpis. 
+                       Donec vitae dui eget tellus gravida venenatis. 
+                       Integer fringilla congue eros non fermentum. Sed dapibus
+                       pulvinar nibh tempor porta.
+                       <br>
+                       <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/013.webp" alt="" class="img-fluid" style="height:400px; width:400px;">
+                       </span></p>
+                    <button onclick="myFunction()" id="myBtn">Read more</button>
+                    
+                    <script>
+                    function myFunction() {
+                      var dots = document.getElementById("dots");
+                      var moreText = document.getElementById("more");
+                      var btnText = document.getElementById("myBtn");
+                    
+                      if (dots.style.display === "none") {
+                        dots.style.display = "inline";
+                        btnText.innerHTML = "Read less"; 
+                        moreText.style.display = "none";
+                      } else {
+                        dots.style.display = "none";
+                        btnText.innerHTML = "Read more"; 
+                        moreText.style.display = "inline";
+                        
+                      }
+                    }
+                    </script>
+                    
+                  </div>
+                  
+                </div>
+                <div class="row " id="non-display">
+                  <div class="col-md-4 mt-5 mb-5">
+                    <div class="flip-card">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/013.webp" alt="Avatar" style="width:400px;height:400px;">
+                        </div>
+                        <div class="flip-card-back">
+                          <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/019.webp" alt="Avatar" style="width:400px;height:400px;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mt-5 mb-5">
+                    <div class="flip-card">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/014.webp" alt="Avatar" style="width:400px;height:400px;">
+                        </div>
+                        <div class="flip-card-back">
+                          <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/017.webp" alt="Avatar" style="width:400px;height:400px;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mt-5 mb-5">
+                    <div class="flip-card">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/015.webp" alt="Avatar" style="width:400px;height:400px;">
+                        </div>
+                        <div class="flip-card-back">
+                          <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/018.webp" alt="Avatar" style="width:400px;height:400px;">
+                        </div>
+                      </div>
+                    
+                </div>
+                </div>
+              </div>
+              <div class="row justify-content-evenly">
+                <div class="col-md-5 mt-5 mb-5 border p-5" style="border-radius: 30px;">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Address</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </div>
+                <div class="col-md-5 mt-5 mb-5">
+                  <p><i class="bi bi-geo-alt"></i> 
+                    03, 26th Main Rd, Putlanpalya, <br>
+                     Jayanagara 9th Block, <br>
+                      Jayanagar, Bengaluru, <br>
+                       Karnataka 560069
+                  </p>
+
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.8303680425083!2d77.59087527425352!3d12.918621816039256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1508fbf4e73b%3A0x4ae83eb2b212fe55!2sMARS%20WEB%20Solution!5e0!3m2!1sen!2sin!4v1685709553809!5m2!1sen!2sin"
+                   width="400" height="400" style="border:0;" 
+                  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="img-fluid"></iframe>
+                </div>
+              </div>
+              <!-- Footer -->
+<footer class="page-footer font-small bg-primary text-light pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">Footer Content</h5>
+        <p>Here you can use rows and columns to organize your footer content.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+           
+            
+          </div>
+            
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+    </html>
+   

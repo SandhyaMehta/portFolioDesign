@@ -1,0 +1,941 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <title>bootstarp!</title>
+</head>
+<style>
+     .border
+    {
+        border-radius: 30px;
+        height: 40px;
+
+    }
+    .border1
+    {
+        border-radius: 30px;
+        height: 40px;
+        background: #fadb74;
+        
+    }
+    .border:hover
+    {
+      transform: translate( 0px,-3px);
+      display:inline-block;
+      box-shadow:1px 6px 1px  black;
+    }
+    .border1:hover
+    {
+        transform: translate( 0px,-3px);
+      display:inline-block;
+      box-shadow:1px 6px 1px  black;
+    }
+    .border2
+    {
+       
+        border-radius: 30px;
+        height: 50px;
+        background:#fcda19 ;
+        width: 210px;
+        line-height: 1;
+       
+    }
+    .border2:hover
+    {
+    transform: translateY( -5px); 
+      display:inline-block;
+      box-shadow:1px 6px 1px  black;
+    }
+    .border3
+    {
+        border-radius: 30px;
+        height: 50px;
+        width: 150px;
+       
+    }
+    .border3:hover
+    {
+      transform: translateY(-5px);
+      display:inline-block;
+      box-shadow:1px 5px 1px  black;
+    }
+    .border4
+    {
+        border-radius: 30px;
+        height: 50px;
+        width: 240px;
+       
+    }
+    .border4:hover
+    {
+      transform: translateY(-5px);
+      display:inline-block;
+     
+    }
+    .border5
+    {
+        border-radius: 30px;
+        height: 50px;
+        width: 200px;
+       
+    }
+    .border5:hover
+    {
+      transform: translateY(-5px);
+      display:inline-block;
+      box-shadow:1px 5px 1px  black;
+    }
+    
+    
+    .changes:hover
+    {
+        background-color:white;
+    }
+    .underline:hover
+    {
+      transform: translateY(-5px);
+      display: inline-block;
+      
+     
+    
+    }
+    .back-color
+    {
+
+        background-image: linear-gradient( white 200px ,rgb(244, 238, 245) 200px);
+    }
+    .collapsible {
+  background-color:white;
+  color: rgb(10, 9, 9);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #fdfbfb;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: rgb(3, 3, 3);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+#b-border:hover
+{
+ border-bottom:1px solid rgb(12, 167, 12);
+ color:rgb(9, 146, 9);
+}
+@media  (min-width:576px ) {
+    #margin1
+    { 
+      margin-top: 50px !important;  
+        
+    }
+    
+}
+/* @media screen and (min-width:500px ) {
+    #margin1
+    {
+      margin-top: 150px !important;  
+        
+    }
+    
+} */
+
+.overlay {
+  height: 100%;
+  width:0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align:left;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+#background
+    {
+        background-image: url(img/wave\ \(2\).png),url(img/wave\ \(1\).png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left top,right bottom;
+        
+    }
+    
+
+
+
+
+    </style>
+    <body>
+        <div class="freeTrial--banner discount__banner--global flex flex--center flex--middle bg-dark p-2 navbar-fixed-top " data-behavior="freeTrialBanner">
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <div class="mt-4">
+                <button  class="button border2 m-5"><a href="1st.html" style="text-decoration: none; color:black ;font-size:20px;"> Home</a></button>
+            </div>
+              <ul class="">
+                <p class="mt-5 mb-5 text-light">
+                  WE'LL HELP YOU —
+                </p>
+                <li  class="mt-5 mb-5 text-light" >
+                <h4  style="font-family:Georgia, 'Times New Roman', Times, serif; font-weight: bold; font-size: 25px; color:white ">Get Your Business Online  <i class="bi bi-chevron-right text-light " style="margin-left: 50px;"></i></h4> 
+                
+                </li>
+                <li  class="mt-5 mb-5 text-light">
+                  <h4  style="font-family:Georgia, 'Times New Roman', Times, serif; font-weight: bold; font-size: 25px; color:white "> Market Your Business <i class="bi bi-chevron-right text-light" style="margin-left: 50px;"></i></h4>
+                </li>
+                <hr>
+                <p  class="mt-5 mb-5 text-light">
+                   PLATFORM FEATURES —
+                </p>
+                <li  class="mt-5 mb-5 text-light">
+                  <h4  style="font-family:Georgia, 'Times New Roman', Times, serif; font-weight: bold; font-size: 25px;  color:white"> Audience Management <i class="bi bi-chevron-right text-light" style="margin-left: 50px;"></i></h4>
+                </li>
+                <li  class="mt-5 mb-5 text-light">
+                  <h4  style="font-family:Georgia, 'Times New Roman', Times, serif; font-weight: bold; font-size: 25px; color:white "> Creative Tools <i class="bi bi-chevron-right text-light" style="margin-left: 50px;"></i></h4>
+                </li>
+                <li  class="mt-5 mb-5 text-light">
+                  <h4  style="font-family:Georgia, 'Times New Roman', Times, serif; font-weight: bold; font-size: 25px; color:white ">Creative Tools <i class="bi bi-chevron-right text-light" style="margin-left: 50px;"></i>
+                  </li></h4> 
+              </ul>
+              
+            </div>
+          </div>
+          <span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776; open</span>
+
+            <span style="text-align: center; color: aliceblue;"><p>Hey there! Free trials are available for Standard and Essentials plans. <a href="/pricing/marketing/">Start for free today.</a></p>
+        </span>
+        </div> 
+        <nav class="navbar navbar-expand-lg navbar-light " style="background-color: rgb(247, 240, 248);">
+            <div class="container-fluid changes ">
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                <ul class="navbar-nav me-auto mb-2 mt-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="font-size:bold; color:black ; font-size:14px;" >Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="font-size:bold; color:black ; font-size:14px;">Resources</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="font-size:bold; color:black ; font-size:14px;">Inspiration</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="font-size:bold; color:black ; font-size:14px;">Resources</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="font-size:bold; color:black ; font-size:14px;">Pricing</a>
+                  </li>
+                  <div class="col-md-3" style="margin-left:30px;">
+                  <img src="img/MCP (1).svg" alt="" class="img-fluid" style="width: 200px;">
+                </div>
+                <div class="col-md-2 ">
+                    <a href="#" style="color:black; text-decoration: none; font-size: 13px;" id="b-border">
+                    <span style="margin-left: 80px;"  id="b-border">Sales:</span>
+                    <br>
+                    <span  id="b-border">+1 (800) 315-5939</span>
+                </a>
+                </div>
+    
+                <div class="col-md-2"> 
+                
+                  <li class="nav-item dropdown d-flex">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-globe"></i> En 
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                    <h3> <a href="https://www.google.com/"> <i class="bi bi-search" style=" color: black; font-weight: bolder;" ></i> </a></h3>
+                  </li>
+               
+                </div> 
+               
+               
+                
+                <div class="col-md-1 border me-3 mt-3 mb-3" >
+                <p class="text-center "> <a href="" style="color: rgb(12, 12, 12); text-decoration: none; font-weight: bold;"> log In</p></a>
+                </div>
+                <div class="col-md-2  border border1  mt-3  mb-3">
+                    <p class="text-center "> <a href="" style="color: rgb(12, 12, 12); text-decoration: none; font-weight: bold;">start free trial</p></a>
+                </div>
+                </div>
+    
+                
+              </div>
+            </div>
+          </nav>
+          <div class="container-fluid  overflow-hidden m-0 p-0 " id="margin">
+            <div class="row justify-content-evenly" style="background-color: rgb(247, 240, 248);">
+            <div class="col-md-5 mt-5 mb-5">
+                <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 13px; font-weight:bold; margin-top: 60px;">
+                    WEBSITE BUILDER
+                </p>
+                <h1 style="font-family:'Times New Roman', Times, serif; font-weight: bolder; font-size: 46px;" id="margin1">
+                    Create a website for free
+                </h1>
+                <p style="font-family:Arial, Helvetica, sans-serif; font-size: 25px; ">
+                    Design and simplicity are at the core of our  <br>
+                    website builder. Easily create, customize, and <br>
+                    promote a stunningwebsite that's search engine <br>
+                     ready all on your own with the power of Mailchimp’s platform. <br>
+                </p>
+                <div class="  mt-4">
+                    <button  class="button border2 m-5"><a href="#" style="text-decoration: none; color:black"> strat building for free</a></button>
+                </div>
+                
+            </div>
+            <div class="col-md-6  mt-5 mb-5">
+                   <img src="img/AUI_Website-Builder_01-Hero.webp" alt="" class="img-fluid">
+            </div>
+          </div>
+          <div class="row" id="background">
+            <div class="col-md-12 text-center mt-5 mb-5">
+                <h1  style="font-family:'Times New Roman', Times, serif; font-weight: bolder; font-size: 46px;">
+                    Brilliant web design, simplified
+                </h1>
+                <p style="font-family:Arial, Helvetica, sans-serif; font-size: 25px;"  >
+                    Our website builder helps bring your unique vision to  
+                     life—no design <br> or code experience required.  Create a customizable, 
+                      mobile-optimized website  <br> within the hour.  All you need to start is 
+                       a domain name and a vision for <br> your website. If you're building  
+                    a small business website, online store, or otherwise, <br>
+                     Mailchimp can simplify the process.
+                </p>
+
+            </div>
+          </div>
+          <div class="row justify-content-evenly"  >
+            <div class="col-md-5 mt-md-5 mb-md-5">
+              <img src="img/22_Website-Builder_AUI.webp" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-5 mt-md-5 mb-md-5">
+                 <h2 style="font-family:Arial, Helvetica, sans-serif;  color: rgb(71, 71, 71); " id="margin1" >
+                    Curate your look and feel
+                 </h2>
+                 <p  style="font-family:Arial, Helvetica, sans-serif; font-size: 21px; margin-top: 20px;">
+                    It's easy to build a beautiful site by applying 
+                    one of our pre-designed color palettes and themes 
+                    in just a few clicks. Ease-of-use is at the forefront of our website builder.
+                     You can even tailor your color palette to your 
+                     brand for a professional-looking website template.
+                 </p>
+                 <div class="col-md-2 me-3 mt-3" style="margin-top:15px;">
+                    <button  class="button border3 m-5"><a href="#" style="text-decoration: none; color:black"> start styling</a></button>
+                    </div>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-md-5 mt-md-5 mb-md-5">
+              <img src="img/23_Website-Builder_AUI.webp" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-5 mt-md-5 mb-md-5" >
+                 <h2 style="font-family:Arial, Helvetica, sans-serif;   color: rgb(71, 71, 71); ">
+                    Customize your new website layout
+                 </h2>
+                 <p  style="font-family:Arial, Helvetica, sans-serif; font-size: 21px; margin-top: 20px;">
+                   
+                    Mailchimp's website builder has pre-built, professional <br>
+                     layouts for every section, so you can quickly change  <br>
+                     the structure of your site as much as
+                 </p>
+                 <div class="col-md-2   me-3 mt-3" style="margin-top:15px;">
+                    <button  class="button border4 m-5"><a href="#" style="text-decoration: none; color:black"> start your building own website</a></button>
+            </div>
+          </div>
+          
+          
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-md-5 mt-md-5 mb-md-5">
+              <img src="img/AUI_Website-Builder_01-Hero.webp" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-5  mt-md-2  mb-md-2">
+                 <h2 style="font-family:Arial, Helvetica, sans-serif; margin-top: 40px;  color: rgb(71, 71, 71); ">
+                    Use beautiful imagery for free
+                 </h2>
+                 <p  style="font-family:Arial, Helvetica, sans-serif; font-size: 21px;">
+                   
+                    Building a unique, customizable website <br>
+                    shouldn't be difficult.Use our built-in stock <br>
+                     photo library to choose from over 2 million free, <br>  
+                     professional-quality photos. While other website <br>
+                      builders put the burden on the user to find and upload  <br>
+                      their own images, Mailchimp makes things simple. Powered by Unsplash.
+                 </p>
+                 <div class="col-md-2   me-3 mt-3" style="margin-top:15px;">
+                    <button  class="button border5 m-5"><a href="#" style="text-decoration: none; color:black"> strat publishing</a></button>
+            </div>
+          </div>
+          
+          
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-md-5 mt-5 mb-5">
+              <img src="img/AUI_Website-Builder_New-Stores.webp" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-5 mt-md-5 mb-md-5">
+                 <h2 style="font-family:Arial, Helvetica, sans-serif; margin-top: 40px;  color: rgb(71, 71, 71); ">
+                    Sell online and manage orders
+                 </h2>
+                 <p  style="font-family:Arial, Helvetica, sans-serif; font-size: 21px;">
+                   
+                    Launch an online e-commerce store from your site <br>
+                     for free—you only pay when you make a sale.  <br>
+                     Then use built-in marketin features to drive traffic  <br>
+                     and sales through our integrated full-featured platform.
+                 </p>
+                 <div class="col-md-2   me-3 mt-3" style="margin-top:15px;">
+                    <button  class="button border5 m-5"><a href="#" style="text-decoration: none; color:black"> strat selling</a></button>
+            </div>
+          </div>
+          
+          
+          </div>
+          <div class="row justify-content-evenly" >
+            <div class="col-md-5 mt-md-5 mb-md-5">
+                <h2 style="font-family:Arial, Helvetica, sans-serif; margin-top: 40px;  color: rgb(71, 71, 71); ">
+                    Offer appointments online
+                </h2>
+                <p  style="font-family:Arial, Helvetica, sans-serif; font-size: 21px; ">
+                  
+                    Add free appointment scheduling to your site so 
+                    that <br> customers can book your services.
+                </p>
+                <div class="col-md-2   me-3 mt-3" style="margin-top:15px;">
+                   <button  class="button border4 m-5"><a href="#" style="text-decoration: none; color:black"> start taking appointments</a></button>
+           </div>
+         </div>
+            <div class="col-md-5 mt-5 mb-5">
+              <img src="img/_NewAppt_Website-Builder_AUI.webp" alt="" class="img-fluid">
+            </div>
+            
+          
+          
+          </div>
+          <div class="row" style="background-color: rgb(241, 238, 238);">
+            <div class="col-md-12  mt-5  text-center ">
+                <h1  style="font-family:Georgia, 'Times New Roman', Times, serif; font-weight: bold; font-size: 36px; ">
+                    Promote your site and build an audience with <br> our all-in-one platform
+                </h1>
+                <p  style="font-family:Arial, Helvetica, sans-serif; font-size: 21px;">
+                    We help you establish your brand, look like a pro, and rise the ranks of <br>
+                     search engines using our easy-to-use website builder.
+                     Customize your <br> website on a no-code platform so that you don't need to hire anyone else to help.
+                </p>
+            </div>
+          </div>
+
+          <div class="row  justify-content-evenly" style="background-color: rgb(241, 238, 238);">
+            <div class="col-md-3  text-center mt-5 mb-5">
+                    <h3 class="underline"><a href="" style="color: black; text-decoration: none; font-weight: 400;" class="underline">Domains</a></h3>
+                    
+                    <p> Purchase a domain or connect an existing one to your website. </p> 
+                          <p>  <a href="" style="font-size: 13px; color: black;">Learn more</a></p>
+                         
+
+            </div>
+            <div class="col-md-3  text-center  mt-5 mb-5">
+                <h3 class="underline"><a href="" style="color: black; text-decoration: none; font-weight: 400; ">SEO Tools</a></h3>
+                    
+                    <p> Custom social posts, SSL certificates, rapid speed,  responsive  design and more.</p> 
+                          <p>  <a href="" style="font-size: 13px; color: black;">Learn more</a></p>
+
+                          
+
+
+
+
+            </div>
+            <div class="col-md-3  text-center  mt-5 mb-5">
+                <h3 class="underline"><a href="" style="color: black; text-decoration: none; font-weight: 400;">Google Workspace</a></h3>
+                    
+                    <p> Add Google Workspace to your domain purchase to  use Google   suite features.</p> 
+                          <p>  <a href="" style="font-size: 13px; color: black;">Learn more</a></p>
+                         
+
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center mt-5 mb-5">
+                <h1  style="font-family:Georgia, 'Times New Roman', Times, serif; font-weight: bold; font-size: 36px; ">
+                    Reach more people with your Mailchimp <br> website
+                   </h1>
+                <p  style="font-family:Arial, Helvetica, sans-serif; font-size: 21px;">
+                    Grow and engage a bigger, higher quality customer base with intelligent  <br>
+                     tools that speak to an interested audience when they’re most willing to  <br> listen.
+                </p>
+            </div>
+          </div>
+          
+
+          <div class="row  justify-content-evenly" >
+            <div class="col-md-3  text-center mt-5 mb-5">
+                    <h3 class="underline"><a href="" style="color: black; text-decoration: none; font-weight: 400;">Built-In Forms</a></h3>
+                    
+                    <p> 
+                        Capture the attention of your website visitors with a custom pop-up form.
+                         </p> 
+                          <p>  <a href="" style="font-size: 13px; color: black;">Learn more</a></p>
+                         
+
+            </div>
+            
+            
+            <div class="col-md-3  text-center  mt-5 mb-5">
+                <h3 class="underline"><a href="" style="color: black; text-decoration: none; font-weight: 400; ">Behavioral Targeting</a></h3>
+                    
+                    <p>Send personalized emails to visitors based on how they interact with your site.</p> 
+                          <p>  <a href="" style="font-size: 13px; color: black;">Learn more</a></p>
+
+                          
+
+
+
+
+            </div>
+            <div class="col-md-3  text-center  mt-5 mb-5">
+                <h3 class="underline"><a href="" style="color: black; text-decoration: none; font-weight: 400;">Reports And Analytics</a></h3>
+                    
+                    <p> Use free reports to track the performance of your pages and refine as you go.</p> 
+                          <p>  <a href="" style="font-size: 13px; color: black;">Learn more</a></p>
+                         
+
+
+            </div>
+          </div>
+          <div class="row back-color">
+            <div class="col-md-12 text-center mt-5 mb-5">
+                <img src="img/Websites-fill-v2-min.webp" alt="" class="img-fluid " > 
+                <h2>
+                    With Mailchimp, you can create and publish a <br> stunning website in under an hour.
+                </h2>
+                <img src="img/Websites-Editor-Social-Proof.webp" alt="" class="img-fluid">
+                 <p style="font-family:Georgia, 'Times New Roman', Times, serif; font-weight: bold; font-size: 30px; margin-top: 70px; " >
+                    “As a brand new startup, we used Mailchimp's   <br> website builder 
+                    to get our story and  business  <br> online  quickly and easily. This intuitive builder <br> 
+                     makes trying out new ideas and <br> adding  updates  straightforward <br> and uncomplicated.”
+                 </p>
+                 <p>
+                    Dr. Julie Durnan, Founder of The Ginger Agency
+                 </p>
+
+            </div>
+
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-md-5 ">
+                <img src="img/ILLO_Hero_Transactional-Sending_Receiving-1520.webp" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-5  mt-5 mb-5">
+                <h2 style="font-family:Arial, Helvetica, sans-serif; margin-top: 40px;  color: rgb(71, 71, 71); margin-top: 200px;" >
+                    Decide if Mailchimp is right for you
+                 </h2>
+                 <p  style="font-family:Arial, Helvetica, sans-serif; font-size: 21px;">
+                   
+                    Check out how our website builder tools stack up <br> against the competition.
+                 </p>
+                 <div class="col-md-2   me-3 mt-3" style="margin-top:15px;">
+                    <button  class="button border5 m-5"><a href="#" style="text-decoration: none; color:black"> See How We Rate</a></button>
+            </div>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-md-3 mt-5 mb-5">
+              <h1 style="font-size: 40px;">FAQs</h1>
+            </div>
+            <div class="col-md-8">
+                <hr>
+                
+                <button class="collapsible"><h3> Can I use a landing page instead of a website?</h3></button>
+                <div class="content">
+                  <p>Our landing page builder is similar to our easy-to-use email designer, 
+                    allowing you to drag and drop design elements that fit your marketing needs. We have several 
+                    pre-built landing pages that can help you get your message across, 
+                    highlight new products, offer a special download, and more.
+                </p>
+                </div>
+                <hr>
+
+                <button class="collapsible"><h3>How do I create a landing page without a domain?</h3></button>
+                <div class="content">
+                  <p>If you need to edit your landing page once it’s published,
+                     go to Campaigns and select All campaigns. From there, 
+                     look for the landing page you want to edit and click the drop-down menu next to it.
+                     You have several editing options, allowing you to update the URL, design, tags, and tracking settings.</p>
+                </div>
+                <hr>
+                <button class="collapsible"> <h3>How to create a landing page in Mailchimp?</h3></button>
+                <div class="content">
+                  <p>If you need to edit your landing page once it’s published, go to 
+                    Campaigns and select All campaigns. From there, look for the landing page you want to edit and click the drop-down menu next to it.
+                     You have several editing options, allowing you to update the URL,
+                      design, tags, and tracking settings.</p>
+                </div>
+                <hr>
+                <button class="collapsible"> <h3>How to edit a landing page in Mailchimp?</h3></button>
+                <div class="content">
+                  <p>If you need to edit your landing page once it’s published, go 
+                    to Campaigns and select All campaigns. From there, look for the 
+                    landing page you want to edit and click the drop-down menu next to it. 
+                    You have several editing options, allowing you to update the URL, design, tags, and tracking settings..</p>
+                </div>
+                <hr>
+                <button class="collapsible"> <h3>What is a landing page in Mailchimp?</h3></button>
+                <div class="content">
+                  <p>If you need to edit your landing page once it’s published, go to
+                     Campaigns and select All campaigns. From there, look for the landing page you want to edit and click the drop-down menu next to it.
+                     You have several editing options, allowing you to update the URL, design, tags, and tracking settings.</p>
+                </div>
+                <hr>
+                <button class="collapsible"> <h3>What is a landing page on a website?</h3></button>
+                <div class="content">
+                  <p>If you need to edit your landing page once it’s published, 
+                    go to Campaigns and select All campaigns. From there,
+                     look for the landing page you want to edit and click the drop-down menu next to it. 
+                    You have several editing options, allowing you to update the URL, design, tags, and tracking settings.</p>
+                </div>
+                <hr>
+                <button class="collapsible"> <h3>What is the difference between a website and a landing page?</h3></button>
+                <div class="content">
+                  <p>If you need to edit your landing page once it’s published, 
+                    go to Campaigns and select All campaigns. From there,
+                     look for the landing page you want to edit and click the drop-down menu next to it. 
+                    You have several editing options, allowing you to update the URL, 
+                    design, tags, and tracking settings.</p>
+                </div>
+                <hr>
+                
+                <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+                
+                for (i = 0; i < coll.length; i++) {
+                  coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight){
+                      content.style.maxHeight = null;
+                    } else {
+                      content.style.maxHeight = content.scrollHeight + "px";
+                    } 
+                  });
+                }
+                </script>  
+            </div>
+
+          </div>
+          <div class="row justify-content-evenly" style="background-color: #e0960c; border-bottom: 1px solid black;">
+            
+            <div class="col-md-2 mt-5 mb-5 " style="line-height: 40px; font-size: 15px;">
+                 <h3 class="footerItemColumn__heading related_links__list__listItem__item copy" data-context-text="Related links">
+                            <p>Related Links:</p>
+                        </h3>
+                <ul class="related_links__list flex flex--columns-2-medium flex--columns-4-large"  style="text-decoration: none;">
+                    
+                    <li class="related_links__list__listItem" >
+                        <div class="footerItem related_links__list__listItem__item" data-context-text="Landing Page">
+                            <a class="cta text-dark" href="https://mailchimp.com/marketing-glossary/landing-pages/">Landing Page</a>
+                        </div>
+                    </li><li class="related_links__list__listItem">
+                        <div class="footerItem related_links__list__listItem__item" data-context-text="Build emails and landing pages in minutes">
+                            <a class="cta text-dark" href="https://mailchimp.com/features/templates/">Build emails and landing pages in minutes</a>
+                        </div>
+                    </li><li class="related_links__list__listItem">
+                        <div class="footerItem related_links__list__listItem__item" data-context-text="Third Pieces Landing Page Recipe">
+                            <a class="cta text-dark" href="https://mailchimp.com/resources/issue-93-featuring-third-piece/">Third Pieces Landing Page Recipe</a>
+                        </div>
+                    </li>    </ul>
+            </div>
+            <div class="col-md-2  mt-5 mb-5 " style="line-height: 40px;">
+                <div class="footerItemColumn" data-context-text="Resources">
+                    <h3 class="footerItemColumn__heading copy margin--bottom-c6">Resources</h3>                <ul>
+                        <li class="footerItem">
+                            <a class="cta text-dark" href="/resources/" aria-label="Marketing Library">
+        
+                Marketing Library    
+        </a>
+                        </li><li class="footerItem">
+                            <a class="cta text-dark" href="/resources/free-marketing-features-overview/" aria-label="Free Marketing Tools">
+        
+                Free Marketing Tools    
+        </a>
+                        </li><li class="footerItem">
+                            <a class="cta text-dark" href="/marketing-glossary/">
+        
+                Marketing Glossary    
+        </a>
+                        </li><li class="footerItem">
+                            <a class="cta text-dark" href="/integrations/">
+        
+                Integrations Directory    
+        </a>
+                        </li>
+                                        </ul>
+                </div>
+            </div>
+            <div class="col-md-2  mt-5 mb-5" style="line-height: 40px;">
+                <div class="footerItemColumn" data-context-text="Community">
+                    <h3 class="footerItemColumn__heading copy margin--bottom-c6">Community</h3>                <ul>
+                        <li class="footerItem">
+                            <a class="cta text-dark" href="/andco/">
+        
+                Agencies &amp; Freelancers    
+        </a>
+                        </li><li class="footerItem">
+                            <a class="cta text-dark" href="https://mailchimp.com/developer/">
+        
+                Developers    
+        </a>
+                        </li><li class="footerItem">
+                            <a class="cta text-dark" href="/events/">
+        
+                Events    
+        </a>
+                        </li>
+                                        </ul>
+                </div>
+            </div>
+            <div class="col-md-2  mt-5 mb-5" style="line-height: 40px;">
+                <div class="footerItemColumn" data-context-text="Company"  >
+                    <h3 class="footerItemColumn__heading copy margin--bottom-c6">Company</h3>                <ul>
+                        <li class="footerItem">
+                            <a class="cta text-dark" href="/about/">
+        
+                Our Story    
+        </a>
+                        </li><li class="footerItem">
+                            <a class="cta text-dark" href="/newsroom/">
+        
+                Newsroom    
+        </a>
+                        </li><li class="footerItem">
+                            <a class="cta text-dark" href="https://mailchimp.com/givewhereyoulive" target="_blank" rel="noopener noreferrer" aria-label="Give Where You Live">
+        
+                Give Where You Live    
+        </a>
+                        </li><li class="footerItem">
+                            <a class="cta text-dark" href="/jobs/">
+        
+                Careers    
+        </a>
+                        </li><li class="footerItem">
+                            <a class="cta text-dark" href="https://www.intuit.com/accessibility/" target="_blank" rel="noopener noreferrer">
+        
+                Accessibility    
+        </a>
+                        </li>
+                                        </ul>
+                </div>
+            </div>
+            
+            <div class="col-md-2  mt-5 mb-5 ">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="img/mac.png"  height="80px" width="80px" alt=""  class="img-fluid">
+                        <p>
+                            Mailchimp Presents
+                             Films, podcasts, and original series that celebrate the entrepreneurial spirit.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="img/Courier.svg" alt="" class="img-fluid">
+                        <p>
+                            Courier
+                        Expert insights, industry trends, 
+                        and inspiring stories that help you live and work on your own terms
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+          </div>
+          
+          <div class="row justify-content-evenly"  style="background-color: #e0960c;">
+            <div class="col-md-3 mt-5 mb-5">
+               <img src="img/icon-ios.svg" height="100px" width="100px" alt=""  class="img-fluid">
+               <img src="img/icon-android.svg" height="100px" width="100px" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-3 d-flex mt-5 mb-5" style="letter-spacing: 20px;">
+               <h3 ><i class="bi bi-facebook"  style="height: 70px; width: 70px;"></i></h3> 
+                <h3><i class="bi bi-instagram" style="height: 70px; width: 70px;"></i></h3>
+               <h3><i class="bi bi-twitter" style="height: 70px; width: 70px;"></i></h3> 
+               <h3> <i class="bi bi-whatsapp" style="height: 70px; width: 70px;"></i></h3> 
+               <h3> <i class="bi bi-linkedin" style="height: 70px; width: 70px;"></i></h3> 
+            </div>
+            <div class="col-md-1  mt-5 mb-5">
+                  <img src="img/EN.svg" height="100px"  width="100px"alt="" class="img-fluid">
+            </div>
+            <div class="col-md-3 mt-5 mb-5">
+                <select name="languagePicker" id="languagePicker-594580608" data-behavior="languagePicker">
+                                                                
+                    <option value="/features/landing-pages/" data-locale="en" selected="selected">
+                        English                </option>
+                                                                    
+                    <option value="/es/features/landing-pages/" data-locale="es">
+                        Español                </option>
+                                                                    
+                    <option value="/fr/features/landing-pages/" data-locale="fr">
+                        Français                </option>
+                                                                    
+                    <option value="/pt-br/features/landing-pages/" data-locale="pt-br">
+                        Português                </option>
+                                                                    
+                    <option value="/de/features/landing-pages/" data-locale="de">
+                        Deutsch                </option>
+                                                                    
+                    <option value="/it/features/landing-pages/" data-locale="it">
+                        Italiano                </option>
+                        </select>
+                       <p class="text-dark" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                        ©2001-2023 All Rights Reserved. Mailchimp® is a
+                         registered trademark of The Rocket Science Group.
+                          Apple and the Apple logo are trademarks of Apple Inc. 
+                          Mac App Store is a service mark of Apple Inc. Google
+                           Play and the Google Play logo are trademarks of Google Inc.
+                            Privacy | Terms | Legal | Cookie Preferences
+
+
+                       </p>
+            </div>
+          </div>
+      
+
+          
+
+
+          </div>
+          <script>
+            function openNav() {
+              document.getElementById("myNav").style.width = "100%";
+            }
+            
+            function closeNav() {
+              document.getElementById("myNav").style.width = "0%";
+            }
+            </script>
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+    </html>
+    

@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <title>bootstarp!</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+
+  />
+  <link href='https://fonts.googleapis.com/css?family=Akronim' rel='stylesheet'>
+</head>
+<style>
+    .border2
+    {
+       
+        border-radius: 30px;
+        height: 50px;
+        background:#bdbbb0 ;
+        width: 150px;
+        line-height: 1;
+       
+    }
+    .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+ 
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+#navbarSupportedContent{
+grid-template-columns: auto auto auto auto;
+  gap: 30px;
+}
+.border-success
+{  
+    box-shadow: 1px 1px 10px 1px rgb(27, 75, 20);
+    border-radius: 30px;
+    border-width:3px;
+   
+}
+.border2
+    {
+       
+        border-radius: 30px;
+        height: 50px;
+        background:#fcda19 ;
+        width: 210px;
+        line-height: 1;
+       
+    }
+    .border2:hover
+    {
+    transform: translateY( -5px); 
+      display:inline-block;
+      box-shadow:1px 6px 1px  black;
+    }
+    .border
+    {
+     box-shadow: 1px 1px 10px 1px rgb(235, 233, 233);
+    }
+    .left.animate__animated.animate__backInLeft
+    {
+        --animate-duration: 10s;
+    }
+    .right.animate__animated.animate__backInRight
+    {
+        --animate-duration: 10s;
+    }
+    #put-image
+    {
+      background-image:url("img/wave\ \(6\).png");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+
+    
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand " href="#"><img src="img/cropped-Final-black-logo-2.webp" alt="" height="60px" width="160px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item me-5">
+                <a class="nav-link active" aria-current="page" href="#" style="font-size: 20px">Home</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link text-dark" href="#" style="font-size: 20px">About Us</a>
+              </li>
+              <ul style="list-style-type: none;">
+                <li class="nav-item dropdown me-5">
+               <div class="dropdown">
+                <a class="nav-link dropdown-toggle text-dark " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="font-size: 20px">Service</a>
+                <div class="dropdown-content " style="background-color: white; border-bottom: 1px; text-align: left;">
+                  <a href="#">
+                   Website
+                  </a>
+                   <a href="#">
+                  Website & hosting
+                  </a>
+                   <a href="#">
+                   Managed Hosting
+                  
+                  </a>
+                  <a href="#">
+                   Wordpress
+                  
+                  </a>
+                  <a href="#">
+                  WordPress Hosting
+                  
+                  </a>
+                 
+               </div>
+              </div>
+              </li>
+              </ul> 
+              <li class="nav-item me-5">
+                <a class="nav-link text-dark" href="#" style="font-size: 20px">Portfolio</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link text-dark" href="#" style="font-size: 20px">Blogs</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link text-dark" href="#" style="font-size: 20px">Contact us</a>
+              </li>
+
+              
+                
+            </ul>
+            <form class="d-flex" role="search">
+             <button  class="button border2 "><a href="#" style="text-decoration: none; color:rgb(29, 27, 27)"> <i class="bi bi-search me-2" style="font-size:20px;"></i>search</a></button>
+            </form>
+          </div>
+        </div>
+      </nav> 
+      <div class="container-fluid overflow-hidden m-0 p-0">
+        <div class="row justify-content-evenly" style="background-color: rgb(226, 223, 223);"  id="put-image">
+            <div class="col-md-12 mt-5  ">
+                <h1 style="font-size:60px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-weight: bolder;">
+                    We Do Things  <br>  That 
+                     Matters
+                </h1>  
+            </div>
+        </div>
+        <div class="row justify-content-evenly">
+            <div class="col-md-3 mt-5 mb-5 ">
+                <div class="card mt-4 mb-5 p-3 border-success" style="width: 370px; height:450px;">
+                    <div class="card-body  ">
+                        <h1 class=" pt-3"><i class="bi bi-book-fill text-success" style="font-size: 50px;"></i> 
+                            <span style="font-size:13px; letter-spacing:2px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">PLAN</span></h1>
+                         <h1 class="text-success" style="font-size:28px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-weight: bolder;">We Ask the Right Questions About Your Business</h1>  
+                        
+                        <p class="card-text pt-4  " style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                            we specialize in creating visually stunning
+                            Before we start any project, we take the time to get to know your business.
+                             We ask the right questions to gain a 
+                            deep understanding of your business, target audience, and competition.
+                        </p>
+                     
+                    </div>
+                  </div> 
+            </div>
+            <div class="col-md-3 mt-5 mb-5">
+                <div class="card mt-4 mb-5 p-3 border-success" style="width: 370px; height:450px;">
+                    <div class="card-body">
+                        <h1 class=" pt-3"><i class="bi bi-check-square-fill text-success" style="font-size: 50px;"></i> 
+                            <span style="font-size:13px; letter-spacing:2px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">EXECUTE</span></h1>
+                         <h1 class="text-success" style="font-size:28px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-weight: bolder;">Developing Customized Solutions</h1>  
+                        
+                        <p class="card-text pt-4  " style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                            we specialize in creating visually stunning
+                            Before we start any project, we take the time to get to know your business.
+                             We ask the right questions to gain a 
+                            deep understanding of your business, target audience, and competition.
+                        </p>
+                     
+                    </div>
+                  </div> 
+
+            </div>
+            <div class="col-md-3 mt-5 mb-5">
+                <div class="card mt-4 mb-5 p-3 border-success" style="width: 370px; height:450px;">
+                    <div class="card-body">
+                        <h1 class=" pt-3"><i class="bi bi-file-earmark-fill text-success" style="font-size: 50px;"></i> 
+                            <span style="font-size:13px; letter-spacing:2px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">LEARN</span></h1>
+                         <h1 class="text-success" style="font-size:28px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-weight: bolder;">Launching Your Solutions</h1>  
+                        
+                        <p class="card-text pt-4  " style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                            we specialize in creating visually stunning
+                            Before we start any project, we take the time to get to know your business.
+                             We ask the right questions to gain a 
+                            deep understanding of your business, target audience, and competition.
+                        </p>
+                     
+                    </div>
+                  </div> 
+
+            </div>
+        </div>
+        <div class="row justify-content-evenly">
+            <div class="col-md-5 mt-5 mb-5">
+                   <img src="img/pexels-sheet.webp" alt="" class="img-fluid animate__animated animate__backInLeft">
+            </div>
+            <div class="col-md-5 mb-5">
+                <h1 class="pt-5" style="font-size: 50px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                    What We Are
+                </h1>
+                <p class="pt-5" style="font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif;">
+                    
+                
+              At DS Tech, we understand the unique challenges that small businesses face when it comes to establishing an online presence. That’s why we offer a range of affordable web design and digital marketing solutions that are tailored to meet the specific needs of small-scale businesses. We work closely with our clients to develop customized strategies that help them increase their visibility and attract more customers.
+
+             For larger-scale businesses, we offer a range of comprehensive solutions that
+             can help them stay ahead of the competition. Our team of experts has experience
+              <br>
+              <br>
+
+                working with businesses of all 
+               sizes and can help develop a strategy that aligns with your business goals
+                and objectives.
+                    For larger-scale businesses, we offer a range of comprehensive
+                  solutions that can help them stay ahead of the competition. Our team of experts has experience working with businesses of all sizes and can help develop a strategy that aligns with your business goals and objectives.
+                </p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center p-5" >
+              <div class="card-body  d-flex  border" style=" border-radius:30px; background-color: rgb(127, 192, 130);" >
+               <h3 class="text-center" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                Need a Successful Project? Let's Start Working Together! 
+                <span style="font-size:20px;"><button  class="button border2 "><a href="#" style="text-decoration:none;"> Estimate Project</a></button></span></h3>
+               
+             </div>
+            </div>
+           </div>
+
+           <div class="row justify-content-evenly">
+            <div class="col-md-5 mt-5 mb-5">
+                <div class="card mt-4 mb-5 p-3  border  left animate__animated animate__backInLeft" style="border-radius:30px;">
+                    <div class="card-body">
+                        <h1 style=" font-size: 50px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Mission</h1>
+                        
+                        <p class="card-text pt-4  " style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                            At DS Tech, our mission is to help businesses of all sizes establish a strong and
+                             effective online presence through our innovative web development solutions.
+                              We aim to deliver customized and high-quality digital products that meet the specific
+                               needs of each client, 
+                            while also providing excellent customer service and support.
+                            <br>
+                            <br>
+                           
+                            we specialize in creating visually stunning
+                            Before we start any project, we take the time to get to know your business.
+                             We ask the right questions to gain a 
+                            deep understanding of your business, target audience, and competition.
+                        </p>
+                     
+                    </div>
+                  </div> 
+     
+            </div>
+            <div class="col-md-5 mt-5 mb-5">
+                <div class="card mt-4 mb-5 p-3  border  right animate__animated animate__backInRight" style="border-radius:30px;">
+                    <div class="card-body">
+                        <h1 style=" font-size: 50px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Vision</h1>
+                        
+                        <p class="card-text pt-4  " style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                            At DS Tech, our mission is to help businesses of all sizes establish a strong and
+                             effective online presence through our innovative web development solutions.
+                              We aim to deliver customized and high-quality digital products that meet the specific
+                               needs of each client, 
+                            while also providing excellent customer service and support.
+                            <br>
+                            <br>
+                           
+                            we specialize in creating visually stunning
+                            Before we start any project, we take the time to get to know your business.
+                             We ask the right questions to gain a 
+                            deep understanding of your business, target audience, and competition.
+                        </p>
+                     
+                    </div>
+                  </div> 
+
+            </div>
+            
+           </div>
+           <hr>
+           <div class="row justify-content-evenly">
+            <div class="col-md-3 mt-5 mb-5 ">
+                <img src="img/cropped-Final-black-logo-2.webp" alt="" height="150px" width="150px" class="img-fluid">    
+                <p class="card-text font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; font-size:25px">We offer the services you need to succeed online.
+                   Get in touch today and let us help you 
+                   transform your online presence.</p>
+              </div>
+            <div class="col-md-3 mt-5 mb-5">
+             
+              <h3 style=" line-height:20px; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;">Useful Links</h3>
+                <ul style="list-style-type: none; ">
+                  <li>
+                     <p class="card-text font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; font-size:25px">FAQ</p>
+                  </li>
+                  <li>
+                       <p class="card-text font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; font-size:25px">Privacy Policy</p>
+                  </li>
+                  <li>
+                      <p class="card-text font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; font-size:25px">Term and Condition</p>
+                  </li>
+                  <li>
+                      <p class="card-text font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; font-size:25px">Support</p>
+                  </li>
+                </ul>
+            </div>
+            <div class="col-md-3 mt-5 mb-5" >
+              <h3>Contact Us</h3> 
+
+              <p><i class="bi bi-geo-alt-fill" style="font-size: 20px;"></i>A-2, Kalarahanga, Patia, Bhubaneswar, Odisha 751024</p> 
+
+              <p> <i class="bi bi-telephone-fill" style="font-size: 20px;"></i> 8249927042</p>
+
+              <p> <i class="bi bi-envelope-at-fill" style="font-size: 20px;"></i> info@dstechsales.com</p>  
+
+
+            </div>
+            
+           </div>
+           <!-- Footer -->
+      <footer class="page-footer font-small blue  bg-primary text-light">
+
+  <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="/"> MDBootstrap.com</a>
+    </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+          
+          
+      </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+</body>
+</html>

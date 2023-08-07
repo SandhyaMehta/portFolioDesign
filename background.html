@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+   <title>bootstarp!</title>
+   <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  </head>
+  <style>
+       #back-de
+       {
+        
+      background-image: linear-gradient(to right, rgb(54, 83, 212), rgb(78, 189, 183),rgb(41, 37, 37));
+
+       }
+       #text-de
+       {
+        font-size: 50px;
+       }
+       #img_de:hover
+       {
+        box-shadow: 3px 4px 30px 4px rgb(235, 234, 234);
+        transform: translate(2px , 2px);
+        display: inline-block;
+        transition-duration: 1s;
+       }
+       #back-des
+       {
+        background-color: red;
+        background-image: linear-gradient(to right, rgb(54, 83, 212), rgb(78, 189, 183),rgb(41, 37, 37));
+       
+       }
+       .border:hover
+       {
+        box-shadow: 5px 5px 10px 5px gray;
+       }
+       #background-color
+       {
+        border: 10px double wheat;
+
+       }
+       
+     .card-img {
+        box-shadow: -30px -30px 2px 4px rgb(196, 192, 192);
+        transform: translate(2px , 2px);
+        display: inline-block;
+        transition-duration: 1s;
+       }
+*{
+  margin: 0;
+  padding: 0;
+}
+section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #3586ff;
+  overflow: hidden;
+}
+section .air{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+  background-size: 1000px 100px
+}
+section .air.air1{
+  animation: wave 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+section .air.air2{
+  animation: wave2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+section .air.air3{
+  animation: wave 30s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+section .air.air4{
+  animation: wave2 5s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+@keyframes wave{
+  0%{
+    background-position-x: 0px; 
+  }
+  100%{
+    background-position-x: 1000px; 
+  }
+}
+@keyframes wave2{
+  0%{
+    background-position-x: 0px; 
+  }
+  100%{
+    background-position-x: -1000px; 
+  }
+}
+#img_back
+{
+    background-image: url(img/blue4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+@media only screen and (max-width:600px)
+{
+    #text-center
+    {
+        text-align: center;
+        margin-top: 10px;
+        display: none;
+    }
+}
+.card {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+.animate__animated.animate__backInLeft {
+  --animate-duration: 5s;
+}
+.right.animate__animate.animate__backInRight {
+  --animate-duration: 20s;
+}
+
+       
+    </style>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light  " style="background-color: rgb(29, 29, 122);">
+            <div class="container-fluid  ">
+                
+              <a class="navbar-brand" href="#" ><img src="img/logo (1).png" alt="" class="img-fluid" height="200px" width="200px"></a>
+              <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="home1.html">Home</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link  text-light" aria-current="page" href="#">contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  text-light" aria-current="page" href="#"><i class="bi bi-person-fill"></i>members</a>
+                  </li>
+                  
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle  text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                 
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-light text-light" type="submit">Search</button>
+                </form>
+              </div>
+            
+        </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row justify-content-center" id="back-de">
+                <div class="col-md-5 text-center mt-3 mb-3" >
+
+                    <img src="img/computer.jpg" alt="" class="img-fluid " height="400px" width="400px" id="img_de">
+
+                </div>
+                <div class="col-md-5 text-center text-light mb-5 mt-5">
+                    <h1 class="animate__animated animate__fadeInRight " id="text-de">
+                        Professional Web Development  Services
+
+                    </h1>
+                    <p>
+                        We are a reliable and affordable digital agency and talent network. We channel creativity, colors, copy and code to help our c
+                    </p>
+                    <button class="btn btn-outline-light text-dark animate__animated animate__fadeInRight" type="submit"> Live Demo</button>
+                    <button class="btn btn-outline-light  text-dark animate__animated animate__fadeInRight" type="submit">Free Download</button>
+
+
+                </div>
+                 </div>
+
+                <div class="row justify-content-center"  id="back-des" >
+                    <div class="col-md-2 col-lg-2 mb-5 mt-5">
+                        <div class="card animate__animated animate__backInLeft">
+                            <div class="card-body border">
+                               <h1><a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a></h1> 
+                                <h4 class="text-gray">
+                                    facebook
+                                </h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur.
+                                </p>
+                                
+                            </div>
+                        </div>
+                 </div>
+                 <div class="col-md-2 col-lg-2  mb-5 mt-5">
+                    <div class="card  animate__animated animate__backInLeft">
+                        <div class="card-body border">
+                            <h1><a href="https://twitter.com/i/flow/login"><i class="bi bi-twitter"></i></a></h1> 
+                            <h4 class="text-success">
+                                twitter
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur.
+                            </p>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="col-md-2 col-lg-2  mb-5 mt-5">
+                    <div class="card animate__animated animate__backInLeft">
+                        <div class="card-body border">
+                            <h1><a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a></h1> 
+                            <h4 class="text-info">
+                               instagram
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur.
+                            </p>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="col-md-2 col-lg-2  mb-5 mt-5">
+                    <div class="card animate__animated animate__backInLeft ">
+                        <div class="card-body border">
+                            <h1><a href="https://in.linkedin.com/"><i class="bi bi-linkedin"></i></a></h1> 
+                            <h4 class="text-primary">
+                               linkedin
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur.
+                            </p>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="col-md-2 col-lg-2  mb-5 mt-5">
+                    <div class="card animate__animated animate__backInLeft">
+                        <div class="card-body border">
+                            <h1><a href="https://www.google.com/"><i class="bi bi-google "></i></a></h1> 
+                            <h4 class="text-danger">
+                                google
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur.
+                            </p>
+                        </div>
+                    </div>
+                 </div>
+                </div>
+                 <div class="row justify-content-center">
+                    <div class="col-md-5 text-center mt-5  mb-5">
+                        <div class="card bg-dark text-white mt-5 mb-5">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/slides/068.webp" height="400px" width="400px" class="card-img" alt="Stony Beach" id="background-color" class="img-fluid">
+                            <div class="card-img-overlay text-center mb-5 mt-5">
+                              <h4 class="card-title text-center ">Card title  This is a wider card with supporting text below as a natural lead-in to additional</h4>
+                              
+                             </div>
+                          </div>
+                    </div>
+                 </div>
+                 <div class="row">
+                    <div class="col-md-12">
+                        <div class="card bg-dark text-white">
+                            <section >
+                              <div class='air air1'></div>
+                              <div class='air air2'></div>
+                              <div class='air air3'></div>
+                              <div class='air air4'></div>
+                            </section>
+                              <div class="card-img-overlay  mb-5 mt-3" id="text-center">
+                                 <h4 class="card-title ">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-5 col-md-5 mt-2 mb-2  right animate__animated animate__fadeInRight" >
+                                            <img src="https://mdbcdn.b-cdn.net/img/new/slides/025.webp" alt="" class="img-fluid ">
+
+                                        </div>
+                                        <div class="col-md-5 col-md-5 mt-2 mb-2 text-center">
+                                            <P style="letter-spacing:5px; font-size: 12px;"> HOW ABOUT TO GO </P> 
+                                           <h4 style="letter-spacing:8px;"> UNDERWATER</h4>
+                                           <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                             Debitis quaerat dolorem harum consectetur, corporis voluptatum asperiores veniam officia,
+                                              </p>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center ">
+                                        <div class="col-md-5 col-md-5  mb-3 mt-3">
+                                            <P style="letter-spacing:5px; font-size: 12px;"> BALI/INDONESIA </P> 
+                                            <h4 style="letter-spacing:8px;"> SURFING</h4>
+                                            <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                              Debitis quaerat dolorem harum consectetur, corporis voluptatum asperiores veniam officia,
+                                               </p>
+                                        </div>
+                                        <div class="col-md-5 col-md-5 d-none d-md-block">
+                                            <img src="https://mdbcdn.b-cdn.net/img/new/slides/023.webp" alt="" class="img-fluid"> 
+                                        </div>
+                                    </div>
+
+                              </div>
+                        </div>
+                                  
+                    </div>
+                 </div>
+                 <div class="row  mb-5 mt-5 " id="img_back">
+                    <div class="col-md-12 col-md-12  text-center">
+                        <h1 style="font-size:50px; letter-spacing: 3px; font-weight:500%; color: aliceblue;">Discover</h1>
+                        <p>choose the place where you want to  visit</p>
+                        
+                    </div>
+                    <div class="col-md-12 col-md-12">
+                        <div class="row justify-content-center" >
+                            <div class="col-md-3 mt-4 mb-4">
+                                <div class="card">
+                                    <div class="card-body border">
+                                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/038.webp"  class="img-fluid" alt="Stony Beach" >
+                                        <h4 class="text-info mb-2 mt-2">
+                                        SHANGRI/CHINA
+                                        </h4>
+                                        
+                                        
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id reiciendis molestias quaerat maiores,
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-4 mb-4">
+                                <div class="card">
+                                    <div class="card-body border">
+                                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/040.webp"  class="img-fluid" alt="Stony Beach" >
+                                        <h4 class="text-info  mb-2 mt-2">
+                                         BALI/INDONESIA
+                                        </h4>
+                                    
+                                       
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id reiciendis molestias quaerat maiores,
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-4 mb-4">
+                                <div class="card">
+                                    <div class="card-body border">
+                                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"  class="img-fluid" alt="Stony Beach" >
+                                        <h4 class="text-info  mb-2 mt-2">
+                                          UBUDI/INDONESIA
+                                        </h4>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id reiciendis molestias quaerat maiores,
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                 </div>
+                 <footer class="bg-light text-center text-lg-start">
+                    <!-- Grid container -->
+                    <div class="container p-4 pb-0">
+                      <form action="">
+                        <!--Grid row-->
+                        <div class="row">
+                          <!--Grid column-->
+                          <div class="col-auto mb-4 mb-md-0">
+                            <p class="pt-2">
+                              <strong>Sign up for our newsletter</strong>
+                            </p>
+                          </div>
+                          <!--Grid column-->
+                  
+                          <!--Grid column-->
+                          <div class="col-md-5 col-12 mb-4 mb-md-0">
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                               
+                              <input type="email" id="form5Example25" class="form-control" placeholder="Email" />
+                              
+                            </div>
+                          </div>
+                          <!--Grid column-->
+                  
+                          <!--Grid column-->
+                          <div class="col-auto mb-4 mb-md-0">
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-primary mb-4">
+                              Subscribe
+                            </button>
+                          </div>
+                          <!--Grid column-->
+                        </div>
+                        <!--Grid row-->
+                      </form>
+                    </div>
+                    <!-- Grid container -->
+                  
+                    <!-- Copyright -->
+                    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                      © 2020 Copyright:
+                      <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                    </div>
+                    <!-- Copyright -->
+                  </footer>
+                 
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        </body>
+        </html>

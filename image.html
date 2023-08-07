@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+   <title>bootstarp!</title>
+  </head>
+  <style>
+    @media screen and (max-width:500px){
+        #img-border
+        {
+            display: none;
+        }
+        
+    }
+    #img-border
+    {
+        position: relative;
+    }
+    #img-border::before
+    {
+    border: 10px solid rgb(250, 10, 10);
+    content: " ";
+    position: absolute;
+    top:40px;
+    left:52px;
+    height: 270px;
+    width: 400px;
+    z-index: -2;
+         
+       
+    }
+    
+    #img-border::after
+    {
+    border: 10px solid rgb(24, 21, 21);
+    content: " ";
+    position: absolute;
+    top: -20px;
+    left: -15px;
+    height: 270px;
+    width: 400px;
+    z-index: -1;
+         
+       
+    }
+    
+    </style>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mt-5" id="img-border">
+                    <img src="img/182.webp" alt="" height="400px" width="420px" class="img-fluid">
+
+                </div>
+            </div>
+        </div>
+        font-family: proxima-nova,sans-serif;
+        <div class="nav collapse-offcanvas closed"><div class="primary-nav"><ul itemscope="" itemtype="http://www.schema.org/SiteNavigationElement"><li class="nav-logo-item"><span class="analytics-click-tracker"><a class="nav-logo-link logo" href="/">bluehostindia<img alt="bluehostindia" width="120px" height="20px" src="data:image/png;base64,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"></a></span></li><li itemprop="name" class="dropdown " role="presentation"><span class="analytics-click-tracker"><a href="/wordpress" data-link-name="WordPress">WordPress</a></span><ul class="dropdown-menu"><li itemprop="name" class="dropdown-menu-item"><span class="analytics-click-tracker"><a href="/websites" data-link-name="Websites">Websites</a></span></li><li itemprop="name" class="dropdown-menu-item"><span class="analytics-click-tracker"><a href="/wordpress/wordpress-hosting" data-link-name="WordPress Hosting">WordPress Hosting</a></span></li><li itemprop="name" class="dropdown-menu-item"><span class="analytics-click-tracker"><a href="/wordpress/managed-hosting" data-link-name="Managed WordPress">Managed WordPress</a></span></li><li itemprop="name" class="dropdown-menu-item"><span class="analytics-click-tracker"><a href="/wordpress/woocommerce-hosting" class="new-badge" data-link-name="WooCommerce">WooCommerce</a></span></li></ul></li><li itemprop="name" class="dropdown open" role="presentation"><span class="analytics-click-tracker"><a href="/hosting" data-link-name="Hosting">Hosting</a></span><ul class="dropdown-menu"><li itemprop="name" class="dropdown-menu-item"><span class="analytics-click-tracker"><a href="/hosting/shared" data-link-name="Shared Hosting">Shared Hosting</a></span></li><li itemprop="name" class="dropdown-menu-item"><span class="analytics-click-tracker"><a href="/hosting/dedicated" data-link-name="Dedicated Hosting">Dedicated Hosting</a></span></li><li itemprop="name" class="dropdown-menu-item"><span class="analytics-click-tracker"><a href="/hosting/vps" data-link-name="VPS Hosting">VPS Hosting</a></span></li></ul></li><li itemprop="name" class=" " role="presentation"><span class="analytics-click-tracker"><a href="/domains" data-link-name="Domains">Domains</a></span></li><li itemprop="name" class="dropdown " role="presentation"><span class="analytics-click-tracker"><a href="/wordpress/woocommerce-hosting" data-link-name="Websites &amp; Stores">Websites &amp; Stores</a></span><ul class="dropdown-menu"><li itemprop="name" class="dropdown-menu-item"><span class="analytics-click-tracker"><a href="/websites" data-link-name="Websites">Websites</a></span></li><li itemprop="name" class="dropdown-menu-item"><span class="analytics-click-tracker"><a href="/wordpress/woocommerce-hosting" class="new-badge" data-link-name="Online Store">Online Store</a></span></li></ul></li><li itemprop="name" class="dropdown " role="presentation"><span class="analytics-click-tracker"><a href="/solutions/full-service" data-link-name="WordPress Services">WordPress Services</a></span><ul class="dropdown-menu"><li itemprop="name" class="dropdown-menu-item"><span class="analytics-click-tracker"><a href="/tailored-design-service-for-wordpress" class="new-badge" data-link-name="WordPress Design">WordPress Design</a></span></li><li itemprop="name" class="dropdown-menu-item"><span class="analytics-click-tracker"><a href="/wp-live" data-link-name="WP Live Support">WP Live Support</a></span></li><li itemprop="name" class="dropdown-menu-item"><span class="analytics-click-tracker"><a href="/managed-seo" class="new-badge" data-link-name="Managed SEO">Managed SEO</a></span></li></ul></li><li itemprop="name" class=" " role="presentation"><span class="analytics-click-tracker"><a href="/affiliates" data-link-name="Affiliates">Affiliates</a></span></li></ul></div><div class="secondary-nav"><ul><li class="maestro"><a href="/maestro" target="_blank" data-element-type="link" data-element-label="maestro">Developers &amp; Designers</a></li><li class="chat"><a href="https://helpchat.bluehost.in/" target="_blank" data-element-type="link" data-element-label="chat">Chat</a></li><li itemprop="name" class="call dropdown "><a id="Call" href="/contact" data-element-type="link" data-element-label="call" target="" rel="noreferrer">Call</a><ul><li itemprop="name"><div class="h4">Call us anytime</div><p>We are available on phone 24/7 to help answer questions and solve your problems</p><div class="telephone h5"><a class="phone-link" href="tel:1800-419-4426" data-element-type="link" data-element-label="1800-419-4426" target="_blank" rel="noopener noreferrer">1800-419-4426</a></div><div class="telephone h5"><a class="phone-link" href="tel:+912271221644" data-element-type="link" data-element-label="+912271221644" target="_blank" rel="noopener noreferrer">+912271221644</a></div></li></ul></li><li class="login"><span class="analytics-click-tracker"><a href="https://my.bluehost.in/web-hosting/cplogin" target="_blank" rel="noreferrer">Login</a></span></li><li class="customer-care-msg">We are available on phone 24/7 to help answer questions and solve your problems.</li><li class="currency dropdown "><span class="analytics-click-tracker"><a href="#" id="Currency" class="currency-selected"><span class="currency-icon inr"></span>INR</a></span><ul><li><span class="analytics-click-tracker"><a href="#"><span class="currency-icon usd"></span>USD</a></span></li><li><span class="analytics-click-tracker"><a href="#"><span class="currency-icon eur"></span>EUR</a></span></li><li><span class="analytics-click-tracker"><a href="#"><span class="currency-icon cad"></span>CAD</a></span></li><li><span class="analytics-click-tracker"><a href="#"><span class="currency-icon gbp"></span>GBP</a></span></li><li><span class="analytics-click-tracker"><a href="#"><span class="currency-icon aud"></span>AUD</a></span></li></ul></li></ul></div><div class="helpline-nav" tabindex="-1"><span class="analytics-click-tracker"><a href="tel:1800-419-4426" target="_blank" data-element-type="link" data-element-label="helpline" rel="noreferrer" class="helpline-num">1800-419-4426</a><p class="supportText">(24x7 Help-line)</p></span></div></div>
+        </body>
+        </html>

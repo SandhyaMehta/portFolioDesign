@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+   <title>bootstarp!</title>
+  </head>
+  <style>
+        #img-bor
+        {
+          border: 10px solid rgb(207, 15, 198);
+        }
+        #img-bord
+        {
+          border: 2px solid rgb(20, 216, 79);
+        }
+        #background
+    {
+        background-color: red;
+        background-image: linear-gradient(to left, rgb(11, 11, 12), rgb(90, 94, 94),rgb(170, 167, 167)); 
+    }
+    /* #background
+    {
+      background-image: linear-gradient(to left, rgb(66, 66, 138), rgb(42, 68, 68),rgb(105, 83, 83)); 
+    } */
+    #background1
+    {
+      background-image: linear-gradient(to left, rgb(68, 68, 70), rgb(122, 124, 124),rgb(153, 149, 149)); 
+    }
+    @media screen and (max-width:1000px) {
+      #margine2
+      {
+        margin: 0%;
+        padding: 0%;
+      }
+      
+    }
+    </style>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="background">
+            <div class="container-fluid">
+              <a class="navbar-brand offset-md-1" href="#"><img src="img/logo5.jpg" alt="" height="100px" width="100px"></a>
+              <button class="navbar-toggler  bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" style="font-weight: 500; font-size:20px;" >Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"style="font-weight: 500; font-size:20px;">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"style="font-weight: 500; font-size:20px;">Pricing</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 500; font-size:20px;">
+                      Dropdown link
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+              
+         <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-5 d-flex">
+                    <!-- <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Primary card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                      <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Secondary card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                      <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Success card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                      <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Danger card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                      <div class="card text-dark bg-warning mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Warning card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>-->
+                     <div class="card mt-5" style="max-width:400px;">
+                        <div class="card-header">
+                            Header
+                        </div> 
+                        <img src="img/033.jpg" alt="" width="400px" class="img-fluid">
+                        <div class="card-body">
+                            <p class="card-title">
+                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                             Fuga neque et quasi ut commodi beatae itaque expedita doloremque repellat 
+                             exercitationem omnis amet aperiam, possimus dolor inventore laboriosam non
+                              pariatur corporis dicta unde, maxime similique. Sunt voluptatem iste quos qui
+                              
+                            </p>
+                            <p class="card-title">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto quibusdam amet at repellat ratione quos qui doloremque, quas consequatur,
+                                 dolorem veniam ipsa! Suscipit placeat ad repudiandae accusantium deserunt quae fugit.
+
+                            </p>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="col-lg-6 ">
+                    <div class="row text-center">
+                        <h1 class="mt-5" style="font-weight:bolder;">
+                            Grow your skills and advance career
+                        </h1>
+                        <p>
+                          <span style="font-weight:bolder"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </span> 
+                            Sapiente vel sit molestias amet obcaecati in cum maxime?
+                             Iusto voluptates voluptatem laborum error neque laboriosam et
+                              
+
+                        </p>
+                        <p>
+                            <span style="font-weight:bolder"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                              Sapiente vel sit molestias amet obcaecati in cum maxime?
+                               Iusto voluptates voluptatem laborum error neque laboriosam </span> 
+                                
+  
+                          </p>
+                    </div>
+                         <div class="row offset-lg-5 mt-5 ">
+                         <div class="col-lg-4 ">
+                            <img src="img/182.webp" class="img-fluid">
+                         </div>
+                        
+                        
+                           </div>
+                           <div class="row text-center">
+                            <h1 class="mt-5" style="font-weight:bolder;">
+                               learn about diffrent skill
+                            </h1>
+                            <p>
+                              <span style="font-weight:bolder"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </span> 
+                                Sapiente vel sit molestias amet obcaecati in cum maxime?
+                                 Iusto voluptates voluptatem laborum error neque laboriosam et
+                                  
+    
+                            </p>
+                            <p>
+                                <span style="font-weight:bolder ; color:red"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                  Sapiente vel sit molestias amet obcaecati in cum maxime?
+                                   Iusto voluptates voluptatem laborum error neque laboriosam </span> 
+                                    
+      
+                              </p>
+                        </div>
+
+                </div>
+         </div>
+         <hr>
+         <div class="row justify-content-evenly"id="background">
+          <div class="col-md-5 m-5">
+
+            <h1 class="mt-3" style="color: rgb(62, 62, 129); ">Learn today’s most in-demand-skills</h1>
+           <p class="mt-3 text-light"> Classes & Courses website template to start creating your stunning website. All templates are fully customizable.</p>
+            <ul class="mt-3 text-light">
+              <li>
+             No credit card required
+            </li>
+            <li>
+             Customer service 24/7
+            </li>
+            <li>
+             No setup fee
+            </li>
+            <li>
+             Cancel any time
+            </li>
+          </ul>
+          <div class="d-flex"> 
+            <h4><i class="bi bi-facebook m-1 text-info"></i></h4> 
+           <h4> <i class="bi bi-instagram m-1 text-success"></i></h4> 
+           <h4> <i class="bi bi-whatsapp m-1 text-primary"></i></h4> 
+           <i class="bi bi-twitter m-1 text-danger"></i>
+          </div>
+          <a href="#!" class="btn btn-dark btn-lg">Explore Online Courses</a>
+          </div>
+          <div class="col-md-5 mt-5 text-light "> 
+               <h4><i class="bi bi-book-fill"></i> knowlage <i class="bi bi-journal"></i></h4>
+             
+                <div class="div-img m-5">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/115.webp"  height="350px" width="350px" alt="" class="img-fluid"  id="img-bor">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/123.webp"  height="290px" width="290px" alt="" class="img-fluid"  
+                    style="margin-top:-90px; margin-left:-50px;" id="img-bord">
+                    
+                </div>
+
+
+              </div>
+                 
+              
+
+          </div>
+        
+        <hr>
+  <div class="row justify-content-evenly">
+    <div class="col-md-3 mb-5 ">
+            <!-- Card Dark -->
+ <div class="card">
+
+  <!-- Card image -->
+  <div class="view overlay">
+    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2821%29.webp"
+      alt="Card image cap">
+    <a>
+      <div class="mask rgba-white-slight"></div>
+    </a>
+  </div>
+
+  <!-- Card content -->
+  <div class="card-body elegant-color white-text rounded-bottom">
+
+    <!-- Social shares button -->
+    <a class="activator waves-effect mr-4"><i class="fas fa-share-alt white-text"></i></a>
+    <!-- Title -->
+    <h4 class="card-title">Card title</h4>
+    <hr class="hr-light">
+    <!-- Text -->
+    <p class="card-text white-text mb-4">Some quick example text to build on the card title and make up the bulk
+      of the card's content.</p>
+    <!-- Link -->
+    <a href="#!" class="white-text d-flex justify-content-end">
+      <h5>Read more <i class="fas fa-angle-double-right"></i></h5>
+    </a>
+
+  </div>
+
+</div>
+<!-- Card Dark -->
+              
+          </div>
+<div class="col-md-3 mb-5">
+            <!-- Card Dark -->
+<div class="card">
+
+  <!-- Card image -->
+  <div class="view overlay">
+    <img class="card-img-top" src="https://mdbcdn.b-cdn.net/img/new/fluid/city/115.webp"
+      alt="Card image cap">
+    <a>
+      <div class="mask rgba-white-slight"></div>
+    </a>
+  </div>
+
+  <!-- Card content -->
+  <div class="card-body elegant-color white-text rounded-bottom">
+
+    <!-- Social shares button -->
+    <a class="activator waves-effect mr-4"><i class="fas fa-share-alt white-text"></i></a>
+    <!-- Title -->
+    <h4 class="card-title">Card title</h4>
+    <hr class="hr-light">
+    <!-- Text -->
+    <p class="card-text white-text mb-4">Some quick example text to build on the card title and make up the bulk
+      of the card's content.</p>
+    <!-- Link -->
+    <a href="#!" class="white-text d-flex justify-content-end">
+      <h5>Read more <i class="fas fa-angle-double-right"></i></h5>
+    </a>
+
+  </div>
+
+</div>
+<!-- Card Dark -->
+          </div>
+<div class="col-md-3 mb-5">
+  <div class="card">
+
+    <!-- Card image -->
+    <div class="view overlay">
+      <img class="card-img-top" src="https://mdbcdn.b-cdn.net/img/new/fluid/city/115.webp"
+        alt="Card image cap">
+      <a>
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+  
+    <!-- Card content -->
+    <div class="card-body elegant-color white-text rounded-bottom">
+  
+      <!-- Social shares button -->
+      <a class="activator waves-effect mr-4"><i class="fas fa-share-alt white-text"></i></a>
+      <!-- Title -->
+      <h4 class="card-title">Card title</h4>
+      <hr class="hr-light">
+      <!-- Text -->
+      <p class="card-text white-text mb-4">Some quick example text to build on the card title and make up the bulk
+        of the card's content.</p>
+      <!-- Link -->
+      <a href="#!" class="white-text d-flex justify-content-end">
+        <h5>Read more <i class="fas fa-angle-double-right"></i></h5>
+      </a>
+  
+    </div>
+  
+  </div>        <!-- Card Dark -->
+
+</div>
+
+ <div class="row" id="background1">
+  <div class="col-md-12 mt-5 text-center text-light">
+    <h1>Building strong foundational skills</h1>
+   <p>Online courses certification section design for showcase your certificate program features.</p>  
+  </div>
+  </div>
+  <div class="row justify-content-center" id="background2">
+      <div class="col-md-5 mt-5">
+       <img src="img/certificate.jpg" alt="" class="img-fluid">
+    </div>
+
+   <div class="col-md-5  mt-5 m-5">
+    <div class="row mt-5 justify-content-evenly">
+      <div class="col-md-6 ">
+        <i class="bi bi-trophy"></i>
+       <h5>Learn from Industry Experts</h5> 
+         <p> Lorem ipsum dolor sit amet, conse ctetur adipisc amus ac iaculis arcu.</p>
+      </div>
+      <div class="col-md-6 ">
+        <i class="bi bi-star"></i>
+        <h5>Free Resources</h5>
+        <p>Pellentesque sagittis placerat mollii purus onvallis venenatis asapien.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mt-3">
+        <i class="bi bi-shield-lock"></i>
+         <h5>Learn Anytime, Anywhere</h5>
+         <p>Integer ultricies lorem nec erat fau euismod ipsum nislnec leo iaculis</p>
+      </div>
+      <div class="col-md-6 mt-2">
+        <i class="bi bi-nut"></i>
+        <h5>Skill-based Learning</h5>
+        <p>Duis sed sollicitudin narcu mi, faucibus in sapien non, auctor placerat arcu.</p>
+      </div>
+    </div>
+
+  </div>
+  
+  </div>
+  <div class="row  justify-content-center">
+    <div class="col-md-12 mt-5 mb-5">
+      <div class="row text-center">
+        <div class="col-md-2 d-none d-md-block">
+          <img src="img/gray-logo-airbnb.svg" alt="">
+        </div>
+        <div class="col-md-2 d-none d-md-block">
+          <img src="img/gray-logo-digitalocean.svg" alt="">
+        </div>
+        <div class="col-md-2 d-none d-md-block">
+          <img src="img/gray-logo-discord.svg" alt="">
+        </div>
+        <div class="col-md-2 d-none d-md-block">
+          <img src="img/gray-logo-intercom.svg" alt="">
+        </div>
+        <div class="col-md-2 d-none d-md-block">
+          <img src="img/gray-logo-netflix.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+<hr>
+
+<div class="row justify-content-evenly">
+  <div class="col-md-5 ">
+   <!-- Default form register -->
+<form class="text-center border border-light  mt-5 " action="#!" id="margine2">
+
+<input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
+<br>
+
+<input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
+   
+<br>
+  <!-- E-mail -->
+<input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+
+  <!-- Password -->
+  <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+  <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+      At least 8 characters and 1 digit
+  </small>
+
+  <!-- Phone number -->
+  <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+  <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+      Optional - for two step authentication
+  </small>
+
+  <!-- Newsletter -->
+  <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
+      <label class="custom-control-label" for="defaultRegisterFormNewsletter">Subscribe to our newsletter</label>
+  </div>
+
+  <!-- Sign up button -->
+  <button class="btn btn-info my-4 btn-block" type="submit">Sign in</button>
+
+  <!-- Social register -->
+  <p>or sign up with:</p>
+
+  <a href="#" class="mx-2" role="button"><i class="bi bi-facebook light-blue-text"></i></a>
+  <a href="#" class="mx-2" role="button"><i class="bi bi-linkedin  light-blue-text"></i></a>
+  <a href="#" class="mx-2" role="button"><i class="bi bi-twitter light-blue-text"></i></a>
+  <a href="#" class="mx-2" role="button"><i class="bi bi-github light-blue-text"></i></a>
+
+  <hr>
+
+  <!-- Terms of service -->
+  <p>By clicking
+      <em>Sign up</em> you agree to our
+      <a href="" target="_blank">terms of service</a>
+
+</form>
+<!-- Default form register -->
+  </div>
+  <div class="col-md-5 mt-5">
+    
+
+
+<p> <i class="bi bi-geo-alt text-primary"></i>Ground floor, The Pavilion, <br>
+   175&176, Bannerghatta Main Rd, <br>
+   Ranka Colony, Bilekahalli, Bengaluru,<br>
+    Karnataka 560076
+Copy address</p> 
+
+ <p><i class="bi bi-stopwatch  text-primary"></i> Open ⋅ Closes 9 pm</p>
+
+ <p> <i class="bi bi-globe-americas  text-primary"></i> zudio.com
+Open website
+Copy website
+</p> 
+
+
+ <p> WJ32+CG Bengaluru, Karnataka <br>
+Copy plus code <br>
+Learn more about plus codes
+</p>
+
+ <p> <i class="bi bi-phone  text-primary"></i> Send to your phone </p>
+ <p> <i class="bi bi-telephone  text-primary"></i> 91-889201556</p>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15555.80884571165!2d77.59631594999999!3d12.91079305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15e8e96fb631%3A0xa11cbe05570b9689!2sZUDIO%20-%20BANERGHATTA%2C%20BENGALURU!5e0!3m2!1sen!2sin!4v1684760890062!5m2!1sen!2sin" width="600" height="450" style="border:0;"
+     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="img-fluid"></iframe>
+  </div>
+</div>
+ <!-- Footer -->
+<footer class="page-footer  bg-primary font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer --> 
+  
+        
+</div>
+      
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+  </body>
+</html>

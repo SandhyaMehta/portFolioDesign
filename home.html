@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+   <title>bootstarp!</title>
+  </head>
+  <style>
+    .border
+    {
+      border: 1px solid red;
+      border-radius: 50px;
+      width: 150px;
+    }
+    .border_box
+    {
+      border: 10px  double gray;
+      box-shadow: -30px -20px 5px gray;
+    }
+    .style_img:hover
+   {
+    transform: translate(50px,50px);
+    display: inline-block;
+    
+    transition-duration:1s;
+    
+    
+   }
+   .card-box
+   {
+    border: 10px  double gray;
+      box-shadow: -30px -20px 5px gray;
+   }
+
+   *{
+  margin: 0;
+  padding: 0;
+}
+section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #3586ff;
+  overflow: hidden;
+}
+section .air{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+  background-size: 1000px 100px
+}
+section .air.air1{
+  animation: wave 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+section .air.air2{
+  animation: wave2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+section .air.air3{
+  animation: wave 30s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+section .air.air4{
+  animation: wave2 5s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+@keyframes wave{
+  0%{
+    background-position-x: 0px; 
+  }
+  100%{
+    background-position-x: 1000px; 
+  }
+}
+@keyframes wave2{
+  0%{
+    background-position-x: 0px; 
+  }
+  100%{
+    background-position-x: -1000px; 
+  }
+}
+.text
+{
+    color: rgb(255, 255, 255);
+    font-family:"Brush Script MT, Brush Script Std, cursive Snell Roundhand, cursive	 ";
+    
+}
+
+  </style>
+   <body>
+    <nav class="navbar navbar-light  bg-danger">
+        <div class="container-fluid">
+          <a class="navbar-brand"><img src="img/logoss.png" alt="" class="img-fluid" height="100px" width="100px"></a>
+          <form class="d-flex input-group w-auto">
+            <input
+              type="search"
+              class="form-control rounded"
+              placeholder="Search"
+              aria-label="Search"
+              aria-describedby="search-addon"
+            />
+            <span class="input-group-text border-0" id="search-addon">
+                <i class="bi bi-search"></i>
+            </span>
+          </form>
+        </div>
+      </nav>
+     
+            <div class="col-12">
+             <div class="card bg-dark text-white">
+                <img src="https://mdbcdn.b-cdn.net/img/new/slides/024.webp" class="card-img" alt="Stony Beach"/>
+                <div class="card-img-overlay">
+                  <h3 class="card-title " >Card title</h3>
+                  <p class="card-text text " style="font-weight:20px; font-size: 20px;">
+                    This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.
+                  </p>
+                 
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mt-5 mb-5">
+                        <h4>About us</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nemo,
+                             reiciendis debitis repellat nisi illum magni eveniet,
+                             nesciunt aut, illo nobis provident. Nihil, libero. Nesciunt adipisci quam eveniet non impedit!
+                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto voluptatum tenetur omnis, sed aut nostrum totam pariatur
+                             , dolorum nihil culpa accusantium recusandae repellat accusamus quo eaque explicabo! Pariatur, placeat deserunt.
+                            </p>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi recusandae tenetur perferendis sed similique tempora doloribus molestiae,
+                        </p>
+                        <div class="row mt-5 mb-5">
+                        <div class="col-md-3 col-md-3  mt-2 mb-2">
+                        <img  src="https://mdbcdn.b-cdn.net/img/new/slides/055.webp " alt="" class="img-fluid">
+                        
+                        <button type="button" class="btn btn-primary mt-5 mb-5" width="10px" >contectus</button>
+                       </div>
+                       <div class="col-md-3 col-md-3 mt-2 mb-2" >
+                        <img  src="https://mdbcdn.b-cdn.net/img/new/slides/058.webp " alt="" class="img-fluid">
+                       </div>
+                       <div class="col-md-3 col-md-3 mt-2 mb-2">
+                        <img  src="https://mdbcdn.b-cdn.net/img/new/slides/056.webp " alt="" class="img-fluid">
+                       </div>
+                       <div class="col-md-3 col-md-3 mt-2 mb-2">
+                        <img  src="https://mdbcdn.b-cdn.net/img/new/slides/057.webp " alt="" class="img-fluid">
+                        
+                       </div>
+                       
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 col-md-12 " >
+                        <div class="card bg-dark text-white">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/slides/066.webp" class="card-img" alt="Stony Beach"/>
+                            <div class="card-img-overlay text-center mb-5 mt-5">
+                              <h4 class="card-title text-center ">Card title  This is a wider card with supporting text below as a natural lead-in to additional</h4>
+                              
+                             </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="row  justify-content-evenly text-center ">
+                        <div class="col-md-3 col-md-3 mt-5 mb-5">
+                            <h4><i class="bi bi-list p-2 bg-danger text-light border" class="img-fluid"></i></h4>
+                            <h5>webpage</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                 Laboriosam, porro, error deserunt amet
+                                  beatae obcaecati modi explicabo 
+                                impedit architecto praesentium nostrum.</p>
+                        </div>
+                        <div class="col-md-3 col-md-3 mt-5 mb-5">
+                            <h4><i class="bi bi-tv-fill p-2 bg-info  text-light border" class="img-fluid"></i></h4>
+                            <h5>website</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                 Laboriosam, porro, error deserunt amet
+                                  beatae obcaecati modi explicabo 
+                                impedit architecto praesentium nostrum.</p>
+                        </div>
+                        <div class="col-md-3 col-md-3 mt-5 mb-5">
+                            <h4><i class="bi bi-stickies p-2  bg-success text-light border" class="img-fluid"></i></h4>
+                            <h5>webdevloper</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                 Laboriosam, porro, error deserunt amet
+                                  beatae obcaecati modi explicabo 
+                                impedit architecto praesentium nostrum.</p>
+                        </div>
+                        <div class="col-md-12 text-dark ">
+                          <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                             Eligendi quo enim tempora molestiae ipsum explicabo autem quibusdam recusandae accusantium corporis!
+                             Molestiae nostrum veniam, similique officiis debitis suscipit cupiditate esse perferendis.</h1>
+                        </div>
+                     </div>
+                     <div class="row">
+                      <div class="col-12 text-center  mt-5 mb-5 ">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/095.webp" class="rounded float-right text-center border_box style_img " alt="..." class="img-fluid" height="150px" width="250px">
+                      </div>
+                      <hr>
+                     </div>
+
+                     <div class="container">
+                      <div class="row">
+                        <div class="col-md-12">
+
+                          <div class="card bg-dark text-white">
+                            <img src="img/back1.jpg" class="card-img" alt="Stony Beach"/>
+                            <div class="card-img-overlay  mb-5 mt-5">
+                              <h4 class="card-title ">Card title  This is a wider card with supporting text below as a natural lead-in to additional</h4>
+                               <h1>FREE BOOTSTRAP  TEMPLATE</h1>  
+                               <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nam nostrum, recusandae facilis totam soluta? Distinctio neque perspiciatis</P>
+
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row justify-content-evenly ">
+                        <div class="col-md-5 mt-5 mb-5 ">
+                          <div class="card mb-3 card-box" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img
+                                  src="https://mdbcdn.b-cdn.net/wp-content/uploads/2020/06/vertical.webp"
+                                  alt="Trendy Pants and Shoes"
+                                  class="img-fluid rounded-start"
+                                />
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">words</p>
+                                  <p class="card-text">
+                                    This is a wider card with supporting text below as a natural lead-in to
+                                   
+                                  </p>
+                                  <p class="card-text">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          
+                        </div>
+                        <div class="col-md-5  mt-5 mb-5  ">
+                          <div class="card mb-3 card-box" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img
+                                  src="https://mdbcdn.b-cdn.net/wp-content/uploads/2020/06/vertical.webp"
+                                  alt="Trendy Pants and Shoes"
+                                  class="img-fluid rounded-start"
+                                />
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">words</p>
+                                  <p class="card-text">
+                                    This is a wider card with supporting text below as a natural lead-in to
+                                   
+                                  </p>
+                                  <p class="card-text">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row  mt-5 mb-5">
+                          <div class="col-12 text-center">
+                            <h1>lets start the bootstarp design</h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellat
+                               sequi aperiam laborum minima dolores eligendi magnam, sapiente,
+                               ex perferendis nisi voluptatem molestias aspernatur enim, ea vero accusamus odit ut.</p>
+                          </div>
+                        </div>
+                        
+
+                      </div>
+                     </div>
+                     <hr>
+                     <div class="row justify-content-evenly mt-5 mb-5" >
+                      <div class="col-12  text-center">
+                        <h1 class="text-info ">
+                          bootstarp is  a beautifull plateform  for webdesigne
+                        </h1>
+                        <p >
+                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore,
+                           doloremque deserunt libero numquam perspiciatis
+                           omnis aperiam autem cum voluptates! Eius unde iure animi quos corporis nobis.
+                            Voluptate quis rem temporibus.
+                        </p>
+                      </div>
+                     </div>
+                     <div class="row  justify-content-evenly">
+                      <div class="col-md-3  col-md-3 text-center">
+                        <h1><i class="bi bi-laptop-fill text-danger" ></i></h1>
+                        <h5>html is most important</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                          Ratione id vitae aliquid aspernatur deleniti eius sapiente nisi maxime, 
+                        </p>
+
+                      </div>
+                      <div class="col-md-3 col-md-3 text-center  mt-5 mb-5">
+                       <h1><i class="bi bi-stickies-fill text-info"></i></h1> 
+                        <h5>html is most important</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                          Ratione id vitae aliquid aspernatur deleniti eius sapiente nisi maxime, 
+                        </p>
+                      </div>
+                      <div class="col-md-3 col-md-3 text-center">
+                        <h1><i class="bi bi-card-image text-primary"></i></h1>
+                        <h5>html is most important</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                          Ratione id vitae aliquid aspernatur deleniti eius sapiente nisi maxime, 
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row justify-content-evenly">
+                       
+                        <div class="col-md-12 col-md-12  " >
+                          <div class="card bg-dark text-white">
+                            <section >
+                              <div class='air air1'></div>
+                              <div class='air air2'></div>
+                              <div class='air air3'></div>
+                              <div class='air air4'></div>
+                            </section>
+                              <div class="card-img-overlay    mb-5 mt-3">
+                                <h4 class="card-title ">
+                                  <h1><i class="bi bi-person-circle"></i></h1>
+                                  <h4>Fill the form</h4>
+                                </h4>
+                                 <div class="col-md-6 mt-5 mb-5">
+                                  <form class="row g-3 needs-validation" novalidate>
+                                    <div class="col-md-4 position-relative">
+                                      <label for="validationTooltip01" class="form-label">First name</label>
+                                      <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+                                      <div class="valid-tooltip">
+                                        Looks good!
+                                      </div>
+                                    </div>
+                                    <div class="col-md-4 position-relative">
+                                      <label for="validationTooltip02" class="form-label">Last name</label>
+                                      <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
+                                      <div class="valid-tooltip">
+                                        Looks good!
+                                      </div>
+                                    </div>
+                                    <div class="col-md-4 position-relative">
+                                      <label for="validationTooltipUsername" class="form-label">Username</label>
+                                      <div class="input-group has-validation">
+                                        <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                                        <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                                        <div class="invalid-tooltip">
+                                          Please choose a unique and valid username.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6 position-relative">
+                                      <label for="validationTooltip03" class="form-label">City</label>
+                                      <input type="text" class="form-control" id="validationTooltip03" required>
+                                      <div class="invalid-tooltip">
+                                        Please provide a valid city.
+                                      </div>
+                                    </div>
+                                    <div class="col-md-3 position-relative">
+                                      <label for="validationTooltip04" class="form-label">State</label>
+                                      <select class="form-select" id="validationTooltip04" required>
+                                        <option selected disabled value="">Choose...</option>
+                                        <option>...</option>
+                                      </select>
+                                      <div class="invalid-tooltip">
+                                        Please select a valid state.
+                                      </div>
+                                    </div>
+                                    <div class="col-md-3 position-relative">
+                                      <label for="validationTooltip05" class="form-label">Zip</label>
+                                      <input type="text" class="form-control" id="validationTooltip05" required>
+                                      <div class="invalid-tooltip">
+                                        Please provide a valid zip.
+                                      </div>
+                                    </div>
+                                    <form class="was-validated">
+                                      <div class="mb-3">
+                                        <label for="validationTextarea" class="form-label">Textarea</label>
+                                        <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+                                        <div class="invalid-feedback">
+                                          Please enter a message in the textarea.
+                                        </div>
+                                      </div>
+                                    <div class="col-12">
+                                      <button class="btn btn-primary" type="submit">Submit form</button>
+                                     
+                                    </div>
+                                  </form>
+                                  <div class="col-5">
+
+                                      
+                                    </div>
+                                  </form>
+                                 </div>
+                               </div>
+                            </div>
+                          </div>
+                        
+                       
+
+                      </div>
+                    </div>
+                     
+                    
+                       
+
+                </div>
+            </div>
+            
+        
+  <body>
+
+</html>
+

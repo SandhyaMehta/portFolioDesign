@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <title>bootstarp!</title>
+</head>
+<style>
+    body{
+        background-color: #020202;
+    }
+    #img-radious
+    {
+        border: 30px solid rgb(240, 12, 12);
+        border-radius: 200px;
+    }
+    #img-radious:hover
+    {
+        box-shadow: -50px -20px 2px 4px rgb(83, 82, 82);
+        transform: translate(10px , 10px);
+        display: inline-block;
+        transition-duration: 1s;
+    }
+    #background
+    {
+        background-color: red;
+        background-image: linear-gradient(to left, rgb(11, 11, 12), rgb(90, 94, 94),rgb(170, 167, 167)); 
+    }
+    #first-border
+    {
+          border: 3px solid white;
+          border-radius: 100px;
+          
+    }
+    #first-second
+    {
+        border: 3px solid white;
+        border-radius: 100px;
+    }
+    #first-third
+    {
+        border: 3px solid white;
+        border-radius: 100px;
+    }
+@media only screen and (max-width:400px)
+{
+ #low-gapping
+{
+    
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+}
+   
+    </style>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container-fluid offset-1">
+              <a class="navbar-brand" href="#"><img src="img/log.jpg" height="100px" width="100px" alt="" class="img-fluid"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-light"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-light" style="font-size: 20px; font-weight: 500;">
+                    <li class="nav-item">
+                      <a class="nav-link text-light active" aria-current="page" href="#">Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="#">Aboutus </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="#">Infrastructure</a>
+                    </li>
+                     <li class="nav-item">
+                      <a class="nav-link text-light" href="#">Enquiry</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="#">Contactus </a>
+                    </li>
+                    
+                    
+                  </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-light " type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <div class="container-fluid">
+            <div class="row" id="background">
+                <div class="col-md-12 text-center " style="margin-top: 7%; margin-bottom: 7%;">
+                     <img src="img/photo3.jpg" alt="" height="300px" width="300px" id="img-radious" >
+                     
+                     
+                </div>
+            </div>
+            <div class="row justify-content-evenly" id="low-gapping">
+                <div class="col-md-3 text-center mt-5 mb-5" >
+                    <img src="img/photo4.jpg" alt="" id="first-border"> 
+                    <h1 class="text-light" style="font-style: oblique;  font-weight: 100;"><span style="color:red">S</span>onya Roman</h1> 
+                    <p class="text-light">Lorem ipsum dolor sit, 
+                        amet consectetur adipisicing elit.
+                        
+                         
+
+                    </p> 
+                </div>
+                <div class="col-md-3 text-center mt-5 mb-5" >
+                    <img src="img/photo5.jpg" alt="" id="first-border">
+                    <h1 class="text-light" style="font-style: oblique;  font-weight: 100;"><span style="color:red">P</span>ettar Staphen</h1>
+                    <p class="text-light">Lorem ipsum dolor sit, 
+                        amet consectetur adipisicing elit.
+                       
+
+                    </p> 
+                </div>
+                <div class="col-md-3 text-center mt-5 mb-5">
+                    <img src=" img/photo3.jpg" alt="" id="first-border">
+                    <h1 class="text-light" style="font-style: oblique; font-weight: 100;"><span style="color:red">S</span>amira Jonson</h1>
+                    <p class="text-light">Lorem ipsum dolor sit, 
+                        amet consectetur adipisicing elit.
+                         
+                          
+
+                    </p> 
+                </div>
+            </div>
+            <div class="row bg-light justify-content-center mb-5 mt-3">
+                <div class="col-md-5 text-center text-dark " style="margin-top:10%;"> 
+                           <h1 class="mt-1">Design Blocks</h1>  
+                           <p  class="p-3" style="font-size:20px; font-weight:500; color: rgb(13, 233, 233);">Far for away  behind the word mountains <br> far from the countries Vokalika and <br>
+                            consontania there live blind text
+                        </p>
+                        
+                        <a href="https://in.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.google.com/"><i class="bi bi-google "></i></a>
+                        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                        <a href="https://twitter.com/i/flow/login"><i class="bi bi-twitter"></i></a>
+                        
+                </div>
+                <div class="col-md-5 mt-5 mb-2">
+                        <img src="img/cartoon.jpg" alt="" class="img-fluid" id="img-absolute">
+                        
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center mt-2  bg-light ">
+                    <h2>Featured Images for a Restaurant <br>
+                   <span style="color:red "> Featured </span>
+                </h2>
+
+                </div>
+            </div>
+             <div class="row d-flex text-center bg-light justify-content-center ">
+                    <div class="col-md-2 mt-3 mb-3">
+                       <h3> <i class="bi bi-laptop text-info"></i></h3> 
+                       <p>Feature One</p>
+                       <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-md-2 mt-3 mb-3 ">
+                        <h3><i class="bi bi-geo-alt-fill text-primary"></i></h3>
+                        <p>Feature Tow</p>
+                        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-md-2 mt-3 mb-3">
+                   <h3> <i class="bi bi-filter-circle-fill text-danger"></i></h3>
+                   <p>Feature Three</p>
+                   <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-md-2 mt-3 mb-3">
+                      <h3> <i class="bi bi-box-seam text-success"></i></h3>
+                      <p>Feature Four</p>
+                      <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p> 
+                      
+                    </div>
+                    
+                  
+                    
+                </div>
+              
+              <div class="row text-light justify-content-center">
+                <div class="col-md-3 mb-4 mt-4">
+                   <p>Counter A</p>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi distinctio, dolorem pariatur voluptates, </p>
+                   <h5><i class="bi bi-telephone-forward"></i> 91-880452968</h5>
+                   <a href="" style="text-decoration: none;"> Sandhy444@gmail.com</a>
+                </div>
+                <div class="col-md-3  mb-4 mt-4">
+                    <p>Counter A</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi distinctio, dolorem pariatur voluptates, </p>
+                    <h5><i class="bi bi-telephone-forward"></i> 91-8952681152</h5>
+                    <a href="" style="text-decoration: none;">rohitSyam@gmail.com</a>
+                </div>
+                <div class="col-md-3  mb-4 mt-4">
+                    <p>About us</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi distinctio, dolorem pariatur voluptates, </p>
+                    <button class="btn btn-outline-info  bg-light text-dark" type="submit" ><a href="home1.html" style="text-decoration: none;"> next para</a></button>
+                </div>
+              </div>
+
+          </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+    </html>
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item ">
+        <a class="nav-link active" aria-current="page" href="#" style="font-weight:bold;">Devloper & Designers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="font-weight:bold;"><i class="bi bi-chat-right-fill"></i> Chat</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight:bold;">
+          <i class="bi bi-phone-fill"></i> Call
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="font-weight:bold;"><i class="bi bi-person-fill"></i> Login</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight:bold;"> <img src="img/flag.png" height="15px" width="15px" alt="" class="img-fluid" >
+           INR
+        </a>
+      </li>
+      
+        
+     
+    </ul>

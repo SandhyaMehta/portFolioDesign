@@ -1,0 +1,1353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <title>bootstarp!</title>
+</head>
+<style>
+  /* #images::before {
+    content: "";
+    background: url("img/hero-icon.png") no-repeat;
+    background-size: 2.6rem;
+    width: 2.6rem;
+    height: 2.6rem;
+    top: 0;
+} */
+.hover-back:hover
+{
+  background-color: aqua;
+}
+@media screen and (max-width:500px){
+  #block
+  {
+    display: none;
+  }
+  
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+@media screen and (max-width:1000px) {
+ #margine
+ {
+  margin: 0px;
+  padding: 0px;
+ }
+}
+@media screen  and (max-width:1000px){
+  #block5
+  {
+    display: none;
+  }
+  
+}
+@media screen and (max-width:500px){
+  #block
+  {
+    display: none;
+  }
+  
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+ 
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+#navbarSupportedContent{
+grid-template-columns: auto auto auto auto;
+  gap: 30px;
+}
+.width 
+{
+  width:280px;
+  background-color: white;
+  box-shadow: 2px 2px 5px 1px gray;
+}
+.img-fluid1
+{
+ 
+  border: 1px solid rgb(218, 213, 213);
+  border-radius: 50px;
+  border-bottom:1px solid gray;
+}
+#fixed-po
+{
+  background-color: white;
+
+}
+.border1
+{
+   
+  border-left: 1px solid rgb(60, 61, 60);
+  height: 120px;
+}
+.border
+{
+  width:100px;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+
+
+    </style>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-light  " id="fixed-po">
+        <div class="container-fluid offset-1   ">
+          <a class="navbar-brand" href="#"><img src="img/logoblue.svg" height="150px" width="150px" alt="" class="img-fluid"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg-light"></span>
+          </button>
+          <div class="collapse navbar-collapse offset-3" id="navbarSupportedContent">
+            <ul class="navbar-nav me-5 mb-2 mb-lg-0 text-light " id="navbarSupportedContent" >
+              <li class="nav-item ">
+                <a class="nav-link active" aria-current="page" href="#">Devloper & Designers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-chat-right-fill"></i> Chat</a>
+              </li>
+              
+                
+                    <li class="nav-item dropdown ">
+                   <div class=" dropdown ">
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >  Call</a>
+                   <div class="dropdown-content  width " style="background-color:white;">
+                     <div class="box m-3 text-dark">
+                      <h2  style="font-size:30px; color: blue;">
+                        Call us <br>
+                        anytime
+                      </h2>
+                      <p>
+                        We are available on phone 24/7
+                         to help answer questions and 
+                         solve your problems
+                      </p>
+                      <p style="font-size:25px; color: blue;">
+                        820-555-8970
+                      </p>
+                      <p  style="font-size:25px; color: blue;">
+                        +9122287649
+                      </p>
+
+                       
+                     </div>
+                  </div>
+                  </div>
+                  </li>
+                 
+                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="font-weight:bold;"><i class="bi bi-person-fill"></i> Login</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" > 
+                  <img src="img/flag.png" height="15px" width="15px" alt="" class="img-fluid" > IND</a>
+                  <div class="dropdown-content width1" style="background-color: white; border-bottom: 1px;">
+                    <a href="#">
+                      <img src="img/aus.png" height="15px" width="15px" alt="" class="img-fluid1" > AUS
+                    </a>
+                     <a href="#">
+                      <img src="img/eur.png" height="15px" width="15px" alt="" class="img-fluid1" > EUR
+                    </a>
+                     <a href="#">
+                      <img src="img/cnd.png" height="15px" width="15px" alt="" class="img-fluid1" > CAN
+                    
+                    </a>
+                    <a href="#">
+                      <img src="img/bri.jpg" height="15px" width="15px" alt="" class="img-fluid1" > GBP
+                    
+                    </a>
+                    <a href="#">
+                      <img src="img/Amr.jpg" height="15px" width="15px" alt="" class="img-fluid1" > AUD
+                    
+                    </a>
+                   
+                 </div>
+                </a>
+              </li>
+              
+                
+              </ul>
+            
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid overflow-hidden m-0 p-0">
+      <div class="row text-center justify-content-center">
+        <div class="col-md-1 mt-2 text-center">
+          <ul style="list-style-type: none;">
+            <li class="nav-item dropdown">
+           <div class="dropdown">
+            <a class="nav-link dropdown-toggle text-dark " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >Wordpress</a>
+            <div class="dropdown-content " style="background-color: white; border-bottom: 1px; text-align: left;">
+              <a href="#">
+               Website
+              </a>
+               <a href="#">
+              Website & hosting
+              </a>
+               <a href="#">
+               Managed Hosting
+              
+              </a>
+              <a href="#">
+               Wordpress
+              
+              </a>
+              <a href="#">
+              WordPress Hosting
+              
+              </a>
+             
+           </div>
+          </div>
+          </li>
+          </ul> 
+        </div>
+        <div class="col-md-1 mt-2 text-center">
+          <ul style="list-style-type: none;">
+            <li class="nav-item dropdown">
+           <div class="dropdown">
+            <a class="nav-link dropdown-toggle text-dark " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >Domains</a>
+            <div class="dropdown-content " style="background-color: white; border-bottom: 1px; text-align: left;">
+              <a href="#">
+               Website
+              </a>
+               <a href="#">
+              Website & hosting
+              </a>
+               <a href="#">
+               Managed Hosting
+              
+              </a>
+              <a href="#">
+               Wordpress
+              
+              </a>
+              <a href="#">
+              WordPress Hosting
+              
+              </a>
+             
+           </div>
+          </div>
+          </li>
+          </ul> 
+        </div>
+        <div class="col-md-2 mt-2 text-center">
+          <ul style="list-style-type: none;">
+            <li class="nav-item dropdown">
+           <div class="dropdown">
+            <a class="nav-link dropdown-toggle text-dark " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" > WordPress & Stores</a>
+            <div class="dropdown-content " style="background-color: white; border-bottom: 1px; text-align: left;">
+              <a href="#">
+               Website
+              </a>
+               <a href="#">
+              Website & hosting
+              </a>
+               <a href="#">
+               Managed Hosting
+              
+              </a>
+              <a href="#">
+               Wordpress
+              
+              </a>
+              <a href="#">
+              WordPress Hosting
+              
+              </a>
+             
+           </div>
+          </div>
+          </li>
+          </ul> 
+        </div>
+        
+        <div class="col-md-2 mt-2 text-center">
+          <ul style="list-style-type: none;">
+            <li class="nav-item dropdown">
+           <div class="dropdown">
+            <a class="nav-link dropdown-toggle text-dark " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" > Wordpress & Service</a>
+            <div class="dropdown-content " style="background-color: white; border-bottom: 1px; text-align: left;">
+              <a href="#">
+               Website
+              </a>
+               <a href="#">
+              Website & hosting
+              </a>
+               <a href="#">
+               Managed Hosting
+              
+              </a>
+              <a href="#">
+               Wordpress
+              
+              </a>
+              <a href="#">
+              WordPress Hosting
+              
+              </a>
+             
+           </div>
+          </div>
+          </li>
+          </ul> 
+        </div>
+        <div class="col-md-2 mt-2 ">
+          <ul style="list-style-type: none;">
+            <li class="nav-item dropdown">
+           <div class="dropdown ">
+            <a class="nav-link dropdown-toggle  text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" > Affiliates</a>
+            <div class="dropdown-content " style="background-color: white; border-bottom: 1px; text-align: left;">
+              <a href="#">
+               Website
+              </a>
+               <a href="#">
+              Website & hosting
+              </a>
+               <a href="#">
+               Managed Hosting
+              
+              </a>
+              <a href="#">
+               Wordpress
+              
+              </a>
+              <a href="#">
+              WordPress Hosting
+              
+              </a>
+             
+           </div>
+          </div>
+          </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul style="list-style-type: none;">
+             <li class="text-primary">
+              <i class="bi bi-telephone-fill text-primary"></i>
+              1800-225-5564
+              <p >
+                (24 to 7 Help-line)
+              </p>
+             
+            </li>
+          </ul>
+        </div>
+        </div>
+        <div class="row justify-content-end"  style="background-color: rgb(244, 250, 250);">
+          <div class="col-md-6 mt-5 mb-5">
+            <p style="letter-spacing: 5px; font-weight: 500;">
+                WORDPRESS WEBSITES
+            </p>
+            <h1 class="mt-2" style="font-size: 60px; font-weight: bolder; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+                Create a great website.
+            </h1>
+             <p class="mt-5" style="font-weight: 500; font-size: 20px;">
+                Whether launching a personal blog or <br>
+                 managing an online store, <br>
+                Bluehost is the best place to start <br>
+                 and grow a successful WordPress website.
+             </p>
+
+
+            
+            <h4>
+            <button type="button" class="mt-4 p-3 bg-primary text-light"     tabindex="0" formtarget="_self" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif "><a href="importentproject3.html" style="color:aliceblue"> Get Started </a></button>
+            </h4>
+
+           <h5 class="mt-4" style="font-size: 28px; font-weight: bolder; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"> Starting at ₹169/mo*</h5>
+           <p>Regularly  <span style=" text-decoration:line-through;"> ₹299 </span>    36/mo term</p> 
+
+          </div>
+          <div class="col-md-4 ">
+            <img src="img/website-builder-hero-img.webp" alt="" class="img-fluid" style="height:700px;">
+          </div>
+
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-12 mt-5 mb-5 text-center ">
+           <h1 style="font-weight:bolder ;font-size: 64px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; ">
+            Get WordPress hosting that fits your <br>
+             ambition.
+           </h1>
+           <p  style="  font-size: 20px; font-weight:500; color: rgb(96, 97, 97);">
+            Blog, website or online store, we’ve got a plan that fits perfectly. <br>
+             It’s one reason we’ve been <br>
+             recommended by WordPress since 2005.
+           </p>
+           <p>
+            Server Location
+           </p>
+           <p class="d-flex">
+            <h4><img src="img/indF.png" height="20px" width="20px" alt="" class="img-fluid"> INDIA  </h4>
+            <h4> <img src="img/usa.png"  height="20px" width="20px" alt="" class="img-fluid">  USA</h4>
+           
+           </p>
+          </div>
+        </div>
+        <hr>
+      <div class="row justify-content-center" style="background-color: rgb(220, 242, 245);">
+        <div class="col-md-12 mt-5 mb-5 text-center">
+          <h5  style="letter-spacing: 5px; font-weight: 500;">WORDPRESS SERVICES</h5>
+          <h1  style="font-weight:bolder ;font-size: 70px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Let the experts build you 
+            the <br> site of your dreams.
+          </h1>
+          <h4 class="mt-5">
+            Short on time? We're happy to create a beautiful & professional website <br>
+            for you. Simply get in touch with our experts for a free consultation.
+          </h4>
+          <h3 class="mt-5" style="font-weight: bold;">
+            Call us now at 1800-419-4426
+          </h3>
+          <h4 class="mt-5">
+            <a href="#om-c57zalv9n8w69vnpz3s0-holder" class="cta link" tabindex="0" aria-label="or Request a Call Back " target="_self">or Request a Call Back </a>
+          </h4>
+
+               
+        </div>
+      
+      </div>
+      <div class="row justify-content-evenly">
+        <div class="col-md-12 mt-5 mb-5 text-center">
+           <h6 style="letter-spacing:5px;">
+            HOSTING. WEBSITES. STORES.
+           </h6>
+           <h1 class="mt-5 mb-5"  style="font-weight:bolder ;font-size: 60px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+            Everything your website needs <br>
+             from start-up to success.
+
+           </h1>
+          
+           
+           </div>
+        </div>
+        <div class="row justify-content-center" id="block">
+          <div class="col-md-12  text-center " >
+            <table style="width:100% ; background-color: rgb(248, 247, 247);">
+              
+              <tr>
+
+                <td class="border mt-5 ">
+                  <h3> SHARED HOSTING</h3>
+                      <p>Best for quickly getting started​</p> 
+      
+                      <h1 class="mt-5"> 
+                        ₹269/mo*
+                      </h1>
+                      <p>
+                        Regularly <span style=" text-decoration-line: line-through;"> ₹499</span> <br>
+                        36/mo term
+                      </p>
+                      <h4>
+                      <button type="button" class="mt-5 p-2 bg-primary text-light" tabindex="0" formtarget="_self" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif "> Get Started</button>
+                      </h4>
+                      <ul class="p" style="list-style-type: none; line-height: 40px;">
+                        <li>
+                          Free SSL Certificate Protection​
+                        </li>
+                        <li>
+                          Free Speed Boosting CDN
+                        </li>
+                        <li>
+                          Free Domain for 1 Year
+                        </li>
+                        <li>
+                          24x7 Expert Support​
+                        </li>
+                      </ul>
+                </td>
+                <td class="border">
+                  <h3>WORDPRESS HOSTING</h3>
+                      <p>Best for quickly getting started​</p> 
+      
+                      <h1 class="mt-5"> 
+                        ₹269/mo*
+                      </h1>
+                      <p>
+                        Regularly <span style=" text-decoration-line: line-through;"> ₹367</span><br>
+                        36/mo term
+                      </p>
+                      <h4>
+                      <button type="button" class="mt-5 p-2 bg-primary text-light" tabindex="0" formtarget="_self" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif "> Get Started</button>
+                      </h4>
+                      <ul class="p" style="list-style-type: none; line-height: 40px;">
+                        <li>
+                          Free SSL Certificate Protection​
+                        </li>
+                        <li>
+                          Free Speed Boosting CDN
+                        </li>
+                        <li>
+                          Free Domain for 1 Year
+                        </li>
+                        <li>
+                          24x7 Expert Support​
+                        </li>
+                      </ul>
+                </td>
+                <td class="border">
+                  <h3>ONLINE STORE</h3>
+                      <p>Best for WordPress blogs and sites​</p> 
+      
+                      <h1 class="mt-5"> 
+                        ₹169/mo*
+                      </h1>
+                      <p>
+                        Regularly <span style=" text-decoration-line: line-through;"> ₹199</span>  <br>
+                        36/mo term
+                      </p>
+                      <h4>
+                      <button type="button" class="mt-5 p-2 bg-primary text-light" tabindex="0" formtarget="_self" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif "> Get Started</button>
+                      </h4>
+                      <ul class="p" style="list-style-type: none; line-height: 40px;" >
+                        <li>
+                          Free SSL Certificate Protection​
+                        </li>
+                        <li>
+                          Free Speed Boosting CDN
+                        </li>
+                        <li>
+                          Free Domain for 1 Year
+                        </li>
+                        <li>
+                          24x7 Expert Support​
+                        </li>
+                      </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 mt-5 mb-5 text-center">
+          <p style="letter-spacing:1px; font-size: 20px; font-weight:500; color: rgb(100, 102, 102);">TRUSTED WORDPRESS SOLUTIONS</p>
+            <h1 style="font-weight:bolder ;font-size: 60px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+                All Wordpress Plans Include
+            </h1>
+          </div>
+        </div>
+
+        <div class="row justify-content-evenly m-1 ">
+          <div class="col-md-3">
+            <h3>Recommended by WordPress</h3>
+            <p style="font-size: 18px; font-weight:500; color: rgb(100, 102, 102);">
+              Host your website on servers 
+              and configurations best suited for WordPress 
+              with one of the top WordPress hosting providers.
+            </p>
+          </div>
+          <div class="col-md-3">
+                <h3>
+                  Fast & Secure
+                </h3>
+                <p style=" font-size: 18px; font-weight:500; color: rgb(100, 102, 102);">
+                  Enjoy premium Cloudflare CDN service for free.
+                   Get reduced server latency,
+                   added protection from DDoS attacks and 
+                   free SSL certificates to keep your website secure.
+                </p>
+          </div>
+          <div class="col-md-3">
+              <h3>
+                24/7 Support
+              </h3>
+              <p style="font-size: 18px; font-weight:500; color: rgb(100, 102, 102);">
+                In-house professional experts for 24/7 help and support. 
+                Our robust help center also includes video tutorials, guides and more.
+
+                
+              </p>
+          </div>
+          <div class="col-md-3">
+            <h3>
+              Money-back Guarantee
+            </h3>
+            <p style="font-size: 18px; font-weight:500; color: rgb(100, 102, 102);">
+              
+              Try us and you'll love us. 
+              If not, get a refund within 30 days of signing up. Your satisfaction is  
+             
+            </p>
+        </div>
+        </div>
+        <div class="row justify-content-evenly m-1 ">
+            <div class="col-md-3"  id="margine">
+              <h3>Recommended by WordPress</h3>
+              <p style="font-size: 18px; font-weight:500; color: rgb(100, 102, 102);">
+                Host your website on servers 
+                and configurations best suited for WordPress 
+                with one of the top WordPress hosting providers.
+              </p>
+            </div>
+            <div class="col-md-3"  id="margine">
+                  <h3>
+                    Fast & Secure
+                  </h3>
+                  <p style=" font-size: 18px; font-weight:500; color: rgb(100, 102, 102);">
+                    Enjoy premium Cloudflare CDN service for free.
+                     Get reduced server latency,
+                     added protection from DDoS attacks and 
+                     free SSL certificates to keep your website secure.
+                  </p>
+            </div>
+            <div class="col-md-3"  id="margine">
+                <h3>
+                  24/7 Support
+                </h3>
+                <p style="font-size: 18px; font-weight:500; color: rgb(100, 102, 102);">
+                  In-house professional experts for 24/7 help and support. 
+                  Our robust help center also includes video tutorials, guides and more.
+  
+                  
+                </p>
+            </div>
+            <div class="col-md-3"  id="margine">
+              <h3>
+                Money-back Guarantee
+              </h3>
+              <p style="font-size: 18px; font-weight:500; color: rgb(100, 102, 102);">
+                
+                Try us and you'll love us. 
+                If not, get a refund within 30 days of signing up. Your satisfaction is  
+               
+              </p>
+          </div>
+        </div>
+          
+       
+
+        <div class="row justify-content-center" style="background-color: rgb(220, 242, 245);">
+          <div class="col-md-6 mt-5 mb-5">
+            <p style="letter-spacing:1px; font-size: 20px; font-weight:500; color: rgb(100, 102, 102);">THE POWER OF WORDPRESS</p>
+            <h1  style="font-weight:bolder ;font-size: 58px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+                Build a website <br>  that grows as <br> you grow.
+            </h1>
+            <p style="letter-spacing:1px; font-size: 20px; font-weight:500; color: rgb(100, 102, 102);">
+                Live editing capabilities, 
+                easy tools <br> and the power of the web's 
+                 most popular platform to <br> help you build as you grow.
+            </p>
+            <h4>
+                <a href="/hosting/shared#pricing-cards" class="secondary arrow cta link" tabindex="0" target="_self">Get Started <i class="bi bi-arrow-right text-primary"></i></a>
+                  </h4>
+          </div>
+          <div class="col-md-4 mt-5">
+             <img src="img/webCreation-desktop.jpg" alt="" class="img-fluid">
+          </div>
+
+        </div>
+
+        <div class="row justify-content-evenly" style="background-color: rgb(220, 242, 245);">
+            
+            <div class="col-md-4 mt-5">
+               <img src="img/webResponsive-desktop.jpg" alt="" class="img-fluid">
+            </div>
+
+            <div class="col-md-6 mt-5 mb-5">
+                <p style="letter-spacing:1px; font-size: 20px; font-weight:500; color: rgb(100, 102, 102);">CONTENT CREATION</p>
+                <h1  style="font-weight:bolder ;font-size: 58px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+                    Share your ideas <br> with the world.
+                </h1>
+                <p style="letter-spacing:1px; font-size: 20px; font-weight:500; color: rgb(100, 102, 102);">
+                    With unique template designs and built-in marketing  <br>
+                    tools to create an audience, Bluehost <br>
+                     offers everything bloggers, vloggers, <br>
+                      and influencers need to boost subscribers and views.
+                </p>
+                <h4>
+                    <a href="/hosting/shared#pricing-cards" class="secondary arrow cta link" tabindex="0" target="_self">Explore Content Creation <i class="bi bi-arrow-right text-primary"></i></a>
+                      </h4>
+              </div>
+  
+          </div>
+          <div class="row justify-content-center" style="background-color: rgb(220, 242, 245);">
+            <div class="col-md-6 mt-5 mb-5">
+              <p style="letter-spacing:1px; font-size: 20px; font-weight:500; color: rgb(100, 102, 102);">ONLINE STORE</p>
+              <h1  style="font-weight:bolder ;font-size: 58px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+                Start selling <br> online quickly <br> and easily.
+              </h1>
+              <p style="letter-spacing:1px; font-size: 20px; font-weight:500; color: rgb(100, 102, 102);">
+                Use the power of WordPress, reliability of Bluehost,  <br>
+                and versatility of WooCommerce to get your ecommerce <br>
+                 store up and running in no time.
+              <h4>
+                  <a href="/hosting/shared#pricing-cards" class="secondary arrow cta link" tabindex="0" target="_self">Explore Online Store<i class="bi bi-arrow-right text-primary"></i></a>
+                    </h4>
+            </div>
+            <div class="col-md-4 mt-5">
+               <img src="img/ecommWP-desktop.jpg" alt="" class="img-fluid">
+            </div>
+  
+          </div>
+
+        <div class="row"   style="background-color: rgb(220, 242, 245);">
+          <div class="col-md-12 text-center mt-5 mb-5 ">
+            <p style="letter-spacing:1px; font-size: 20px; font-weight:500; color: rgb(100, 102, 102);">
+              WEBSITE TEMPLATES
+            </p>
+            <h1  style="font-weight:bolder ;font-size: 60px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+              Stunning website templates to make <br>
+              your website stand out.
+            </h1>
+            <p style="letter-spacing:1px; font-size: 24px; font-weight:500; color: rgb(100, 102, 102);">
+              Bluehost marketplace gives you access to hundreds of free and premium <br>
+              website themes. Pick one that  suits your style and start building. <br>
+
+                
+            <h4>
+              <button type="button" class="mt-5 p-2 bg-primary text-light" tabindex="0" formtarget="_self" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif "> Get Started</button>
+              </h4>
+              <div class="m-5">
+                <img src="img/Theme_collage_desktop__1_-min.jpg"  alt="" class="img-fluid">
+              </div>
+
+          </div>
+        </div>
+        <div class="row justify-content-evenly" style="background-color: rgb(220, 242, 245);">
+          <div class="col-md-5 mt-5 mb-5">
+            <p style="letter-spacing:1px; font-size: 20px; font-weight:500; color: rgb(100, 102, 102);">
+              BUILD YOUR BRAND
+            </p>
+            <h1 style="font-weight:bolder ;font-size: 60px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+              Customize your website <br>
+               with your creativity.
+            </h1>
+            <p  style="letter-spacing:1px; font-size: 20px; font-weight:500; color: rgb(100, 102, 102);">
+              Tailor your website to fit your brand with true design flexibility. 
+              No other builder lets you create and modify with such boundless creativity.
+            </p>
+          
+            <h4>
+            <a href="/hosting/shared#pricing-cards" class="secondary arrow cta link" tabindex="0" target="_self">Get Started <i class="bi bi-arrow-right text-primary"></i></a>
+              </h4>
+          </div>
+          <div class="col-md-5 mt-5">
+             <img src="img/design-panel-min.png" alt="" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="row justify-content-evenly" style="background-color: rgb(235, 250, 252);">
+          
+          <div class="col-md-4 mt-5">
+             <img src="img/Plugins_Desktop__1_.jpg" alt="" class="img-fluid">
+          </div>
+
+          <div class="col-md-5 mt-5 mb-5">
+            <p style="letter-spacing:1px; font-size: 20px; font-weight:500; color: rgb(100, 102, 102);">
+              POWERFUL PLUGINS
+            </p>
+            <h1  class="mt-3"style=" line-height: 80px; font-weight:bolder ;font-size: 55px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; ">
+              Equip your <br> website  
+
+              to <br> deliver  <br>maximum <br>
+
+               performance.
+            </h1>
+            <p  style="letter-spacing:1px; font-size: 20px; font-weight:500; color: rgb(100, 102, 102);">
+              Secure payment gateways, fully customisable online stores,
+               customer chat windows and anything 
+              else you need to transform your website into the ultimate can-do machine.
+            </p>
+          
+            <h4>
+            <a href="/hosting/shared#pricing-cards" class="secondary arrow cta link" tabindex="0" target="_self">Get Started <i class="bi bi-arrow-right text-primary"></i></a>
+              </h4>
+          </div>
+        </div>
+        <div class="row  justify-content-evenly" style="background-color:rgb(67, 185, 201);">
+          <div class="col-md-6 mt-5 mb-5">
+            <p style=" line-spacing:4px; letter-spacing:1px; font-size: 20px; font-weight:500; color: rgb(19, 20, 20);">
+              SUPPORT AND GUIDANCE
+            </p>  
+            <h1 style=" line-height: 90px; font-weight:bolder ;font-size: 60px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; ">
+              Expert Help for
+              beginners, pros
+               and just about anyone.
+            </h1>
+            <h4 style=" line-height:50px;">
+              <i class="bi bi-telephone me-2"></i> 1800-419-4426
+            </h4>
+            <h4  style=" line-height: 50px;">
+              <i class="bi bi-chat-right me-2"></i> Chat Now
+            </h4>
+            <h4  style=" line-height: 50px;">
+              <i class="bi bi-telephone"></i>+912271221644
+            </h4>
+            <p  style=" line-height: 50px; font-size: 22px; font-weight:500; color: rgb(8, 8, 8); " >
+              If your account is on Bluehost.COM, call our helpline listed here
+            </p>
+          </div>
+          <div class="col-md-4 mt-5 mb-5">
+                 <img src="img/support-desktop (1).svg" alt="" class="img-fluid">
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-md-4 mt-5 mb-5">
+             <h3>
+              24/7 Support
+             </h3>
+             <p style="font-size: 20px; font-weight:500; color: rgb(8, 8, 8);">
+              Every Bluehost account comes with free 24/7 chat and phone support.
+             </p>
+             
+            </div>
+            <div class="col-md-3 mt-5 mb-5">
+             <h3>
+              Expert 1:1 Building Guidance
+             </h3>
+             <p style="font-size: 20px; font-weight:500; color: rgb(8, 8, 8);">
+              <p style="font-size: 20px; font-weight:500; color: rgb(8, 8, 8);">
+                Every Bluehost account comes with free 24/7 chat and phone support.
+               </p>
+             </p>
+  
+            </div>
+            <div class="col-md-3 mt-5 mb-5">
+              <h3>
+                Beyond Limits
+              </h3>
+              <p style="font-size: 20px; font-weight:500; color: rgb(8, 8, 8);">
+                Get Unlimited Domains, SSD storage, Bandwidth, Parked Domains on select plans.
+              </p>
+  
+            
+          </div>
+  
+
+        </div>
+        <div class="row justify-content-evenly" style="background-color:rgb(230, 250, 252);" >
+          <div class="col-md-5 mt-5 mb-5">
+             <img src="img/woman-with-lock.svg" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-6 mt-5 mb-5">
+            <p style=" letter-spacing:1px; font-size: 20px; font-weight:500; color: rgb(63, 65, 65);">
+              SUPPORT AND GUIDANCE
+            </p> 
+            <h1 style="font-weight:bolder ;font-size: 70px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; ">
+              Safeguard <br>  against threats  to your website.
+            </h1> 
+            <p style="letter-spacing:1px; font-size: 20px; font-weight:500; color: rgb(100, 102, 102);">
+              Tailor your website to fit your brand with <br> true design flexibility. 
+              No other builder <br> lets you create and modify  with such <br> boundless creativity.
+            </p>
+            <h4>
+              <a href="/hosting/shared#pricing-cards" class="secondary arrow cta link" tabindex="0" target="_self">Get Started <i class="bi bi-arrow-right text-primary"></i></a>
+                </h4>
+          </div>
+        </div>
+        <div class="row justify-content-evenly" style="background-color:rgb(245, 248, 248);" >
+          <div class="col-md-6 mt-5 mb-5">
+             <img src="img/bh-dashboard-desktop.svg" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-5 mt-5 mb-5">
+            <p style=" letter-spacing:1px; font-size: 20px; font-weight:500; color: rgb(63, 65, 65);">
+              BLUEHOST DASHBOARD
+            </p> 
+            <h1 style="font-weight:bolder ;font-size: 70px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; ">
+              Manage your website empire.
+            </h1> 
+            <p style="letter-spacing:1px; font-size: 20px; font-weight:500; color: rgb(8, 8, 8);">
+              Track your visitor analytics, user comments and
+               anything else happening on your website right from your Bluehost dashboard.
+            </p>
+            <h4>
+              <a href="/hosting/shared#pricing-cards" class="secondary arrow cta link" tabindex="0" target="_self">Get Started <i class="bi bi-arrow-right text-primary"></i></a>
+                </h4>
+          </div>
+        </div>
+        <div class="row justify-content-center" style="background-color:rgb(238, 251, 252);" >
+          <div class="col-md-5 mt-5 mb-5">
+             <img src="img/maestropng.png" alt="" class="img-fluid" style="margin-top:150px;">
+          </div>
+          <div class="col-md-5 mt-2 ">
+            <p style=" letter-spacing:4px; font-size: 20px; font-weight:500; color: rgb(96, 97, 97);">
+              BLUEHOST MAESTRO
+            </p> 
+            <h1 style="font-weight:bolder ;font-size: 64px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; ">
+              The most efficient way to manage multiple WordPress sites and clients.
+            </h1> 
+            <p style="letter-spacing:1px; font-size: 20px; font-weight:500; color: rgb(100, 102, 102);">
+              Handcrafted for Web Designers and Developers,
+               a single dashboard to manage all your clients 
+               with 1-click access to WP panel, 1-click hosting
+                configuration with cPanel
+               and the ability to create stunning invoices to bill your clients like a pro.
+            </p>
+            <h4>
+              <a href="/hosting/shared#pricing-cards" class="secondary arrow cta link" tabindex="0" target="_self">Get Started <i class="bi bi-arrow-right text-primary"></i></a>
+                </h4>
+          </div>
+        </div>
+        <div class="row justify-content-evenly" style="background-color:rgb(250, 253, 253);" >
+          <div class="col-md-12">
+           <div class="container">
+                <div class="row ">
+                  <div class="col-md-12 mt-5 mb-5">
+                  <h1 style="font-weight:bolder ;font-size:50px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; ">
+                    FAQ
+                  </h1>
+                  <hr style="color: blue;">
+                  <div class="row justify-content-evenly">
+                    <div class="col-md-5 mt-5 mb-5">
+                        <p  style="letter-spacing:1px; font-size: 25px; font-weight:500; color: rgb(14, 17, 17);">
+                          Is Bluehost good for small businesses?
+                        </p>
+                    </div>
+                    <div class="col-md-5 mt-5 mb-5">
+                       <p style=" font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; letter-spacing:1px; font-size: 17px; font-weight:500; color: rgb(38, 41, 41);">
+                        Bluehost is dedicated to getting your idea online! Whether you’re a blogger, a small business,
+                         web designer or developer, Bluehost has something for you.
+                          Bluehost enables small businesses to create an online identity
+                           by equipping them with the right tools - domain hosting, marketing tools, recommended SEO keywords, analytics dashboards and more, all at affordable prices, apt for a small business budget.
+
+                         Additionally, with 24x7 expert support, we’re always there
+                          to help! Bluehost powers over 2 million websites worldwide and is
+                           trusted by several small businesses. We’re here to help small 
+                           businesses succeed!
+                       </p>
+                    </div>
+                  </div>
+                  <hr style="color: blue;">
+                  <div class="row justify-content-evenly">
+                    <div class="col-md-5 mt-5 mb-5">
+                        <p  style=" letter-spacing:1px; font-size: 25px; font-weight:500; color: rgb(5, 5, 5);">
+                          Why is Bluehost a reliable hosting company?
+                        </p>
+                    </div>
+                    <div class="col-md-5 mt-5 mb-5">
+                       <p style=" font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; letter-spacing:1px; font-size: 17px; font-weight:500; color: rgb(38, 41, 41);">
+                        Bluehost has been a trusted web hosting provider since 2003 and continues to
+                         revolutionize the website creation experience.
+                         Over 2 million websites are powered by Bluehost and we 
+                         continue to provide world class services and products to our global customer base. As one of the top recommended WordPress hosting providers by WordPress.org, we provide web hosting and domain solutions that can optimize WordPress websites for speed, performance and design through our innovative products.
+
+                          Bluehost continues to distinguish itself from competitors by 
+                          offering 24/7 support, affordable domain and hosting charges,
+                           security and a comprehensive suite of web tools to provide each
+                            customer with the necessary resources for success.
+                       </p>
+                    </div>
+                  </div>
+                  <hr style="color: blue;">
+                  <div class="row justify-content-evenly">
+                    <div class="col-md-5 mt-5 mb-5">
+                        <p  style="letter-spacing:1px; font-size: 25px; font-weight:500; color: rgb(38, 41, 41);">
+                          How do I buy a domain name on Bluehost?
+                        </p>
+                    </div>
+                    <div class="col-md-5 mt-5 mb-5">
+                       <p style=" font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; letter-spacing:1px; font-size: 17px; font-weight:500; color: rgb(38, 41, 41);">
+                        It’s simple! Follow these steps to buy a domain name on Bluehost:
+
+  <br> - Head to the Domains section, linked here or through the Menu
+  <br> - Use the Search bar to look for a Domain Name of your choice
+  <br> -If your desired domain name is available, simply ‘Add to Cart’,
+  <br> - Next provide your billing and payment details
+  <br> - Review the information and ensure the data is correct
+  <br> - Choose your payment method & you’re done!
+                       </p>
+                    </div>
+                  </div>
+                  <hr style="color: blue;">
+                  <div class="row justify-content-evenly">
+                    <div class="col-md-5 mt-5 mb-5">
+                        <p  style="letter-spacing:1px; font-size: 25px; font-weight:500; color: rgb(38, 41, 41);">
+                          Is Bluehost good for small businesses?
+                        </p>
+                    </div>
+                    <div class="col-md-5 mt-5 mb-5">
+                       <p style=" font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; letter-spacing:1px; font-size: 17px; font-weight:500; color: rgb(38, 41, 41);">
+                        Bluehost is dedicated to getting your idea online! Whether you’re a blogger, a small business,
+                         web designer or developer, Bluehost has something for you.
+                          Bluehost enables small businesses to create an online identity
+                           by equipping them with the right tools - domain hosting, marketing tools, recommended SEO keywords, analytics dashboards and more, all at affordable prices, apt for a small business budget.
+
+                         Additionally, with 24x7 expert support, we’re always there
+                          to help! Bluehost powers over 2 million websites worldwide and is
+                           trusted by several small businesses. We’re here to help small 
+                           businesses succeed!
+                       </p>
+                    </div>
+                  </div>
+                  <hr style="color: blue;">
+                  <div class="row justify-content-evenly">
+                    <div class="col-md-5 mt-5 mb-5">
+                        <p  style="letter-spacing:1px; font-size: 25px; font-weight:500; color: rgb(38, 41, 41);">
+                          How to transfer domain name to Bluehost?
+                        </p>
+                    </div>
+                    <div class="col-md-5 mt-5 mb-5">
+                       <p style=" font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; letter-spacing:1px; font-size: 17px; font-weight:500; color: rgb(38, 41, 41);">
+                        
+                           Bluehost makes it easy to transfer an existing domain to your
+                            Bluehost account. Within your cPanel you will navigate to the 
+                            domain management section and follow the on-screen instructions
+                             to begin your domain transfer. If you need any assistance,
+                            please contact our customer support team and we will be 
+                            happy to help you.
+                       </p>
+                    </div>
+                  </div>
+                  <hr style="color: blue;">
+                  <div class="row justify-content-evenly">
+                    <div class="col-md-5 mt-5 mb-5">
+                        <p  style="letter-spacing:1px; font-size: 25px; font-weight:500; color: rgb(38, 41, 41);">
+                          Why Choose Bluehost for WordPress?
+                        </p>
+                    </div>
+                    <div class="col-md-5 mt-5 mb-5">
+                       <p style=" font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; letter-spacing:1px; font-size: 17px; font-weight:500; color: rgb(38, 41, 41);">
+                        In addition to offering reliable and affordable domain hosting services
+                         and WordPress hosting, Bluehost installs WordPress automatically upon
+                          the completion of signing up for an account. You don't need to worry about 
+                          finding the correct version of WordPress, Bluehost always installs the latest 
+                          version so you have the most recent features available for your website. 
+                          Bluehost has been the #1 recommended WordPress
+                         hosting provider since 2005 and we take pride in our customer service and expertise.
+                       </p>
+                    </div>
+                  </div>
+                  <hr style="color: blue;">
+                  <div class="row justify-content-evenly">
+                    <div class="col-md-5 mt-5 mb-5">
+                        <p  style="letter-spacing:1px; font-size: 25px; font-weight:500; color: rgb(38, 41, 41);">
+                          Why do I need Bluehost for WordPress?
+                        </p>
+                    </div>
+                    <div class="col-md-5 mt-5 mb-5">
+                       <p style=" font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; letter-spacing:1px; font-size: 17px; font-weight:500; color: rgb(38, 41, 41);">
+                        When you sign up for a domain hosting account with Bluehost, 
+                        we automatically install WordPress with your new account.
+                         Since 2005 Bluehost has been the #1 recommended hosting
+                          provider for WordPress because of our customer service and expertise.
+                           We continually offer reliable and affordable WordPress hosting while 
+                           providing our customers with products, tools and support to help them
+                            successfully manage their website. You don't need to worry about finding 
+                            the correct version of WordPress, Bluehost always installs 
+                        the latest version so you have the most recent features available for your website.
+                       </p>
+                    </div>
+                  </div>
+                  <hr style="color: blue;">
+                  <div class="row justify-content-evenly">
+                    <div class="col-md-5 mt-5 mb-5">
+                        <p  style="letter-spacing:1px; font-size: 25px; font-weight:500; color: rgb(38, 41, 41);">
+                          Does Bluehost automatically install WordPress?
+                        </p>
+                    </div>
+                    <div class="col-md-5 mt-5 mb-5">
+                       <p style="letter-spacing:1px; font-size: 17px; font-weight:500; color: rgb(38, 41, 41);">
+                        Yes, Bluehost automatically installs WordPress upon the completion of 
+                        signing up for an account. Bluehost always installs the 
+                        latest version so you have the most recent features available for your website.
+                       </p>
+                    </div>
+                  </div>
+                  <hr style="color: blue;">
+                  <div class="row justify-content-evenly">
+                    <div class="col-md-5 mt-5 mb-5">
+                        <p  style="letter-spacing:1px; font-size: 25px; font-weight:500; color: rgb(38, 41, 41);">
+                          How long does it take Bluehost to install WordPress?
+                        </p>
+                    </div>
+                    <div class="col-md-5 mt-5 mb-5">
+                       <p style=" font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; letter-spacing:1px; font-size: 17px; font-weight:500; color: rgb(38, 41, 41);">
+                        Once you've completed your account set up, and picked a theme, 
+                        your new account is automatically connected to the latest version of WordPress.
+                         Simply login to your customer dashboard and
+                         find your new site waiting for you to start editing. So go on, buy domain hosting today!
+                       </p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+           </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly" style="background-color:rgb(217, 241, 243);" >
+          <div class="col-md-5 mt-5 mb-5" >
+               <p style=" letter-spacing:4px; font-size: 20px; font-weight:500; color: rgb(96, 97, 97);">
+                CUSTOMER SPOTLIGHT
+               </p>
+               <h1 style="font-weight:bolder ;font-size: 64px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; ">
+                What clients are
+                saying about us
+               </h1>
+               <p style="  font-size: 20px; font-weight:500; color: rgb(96, 97, 97);">
+                Don't just take our word for it, here is what
+                some of our customers have to say 
+               </p>
+          </div>
+          <div class="col-md-3 mt-5 mb-5" >
+            
+           
+              <img src="img/double.jpg" height="28px"  width="28px" alt="" class="img-fluid">
+
+              <p class="mt-3" style=" letter-spacing:1px; font-size: 20px; font-weight:500; color: rgb(24, 26, 26);">
+                Best in Class Support
+              </p>
+              <div class="triangle">Having Bluehost as a service provider for RoadsOfMumbai.
+                com ensured that there were no server issues. The Bluehost customer service 
+                team has been very helpful and was available every step of the way in my 
+                onboarding experience to help me set up my blog.
+                 Thanks to the Bluehost team for all the support and 
+                 services to help Roads of Mumbai grow as a platform.
+              </div>
+              
+            </div>
+          
+          <div  class="col-md-3 mt-5 mb-5 ">
+            <h5 style="font-weight: bolder;">
+              Roads of Mumbai
+            </h5>
+            <h4 style=" color: rgb(56, 54, 54);">
+              Founder
+            </h4>
+            <div style="margin-top: 60px;">
+              <img src="img/Roads-of-Mumbai.png" height="80px" width="80px" alt="" class="img-fluid">
+            </div>
+
+
+          </div>
+        </div>
+        <div class="row justify-content-center" style="background-color: rgb(229, 251, 253);">
+          <div class="col-md-12  " style="margin-top: 50px; ">
+
+           <p style="font-size: 13px;">*The promotional price is for the first term only and renews at the <span style="color: blue;"> regular rate.</span></p>
+           <p style="font-size: 13px;">  * <span style="color: blue;" > 30-Day Money-Back Guarantee</span> does not extend to domain names. </p>
+
+          </div>
+        </div>
+        <div class="row  justify-content-center" style="background-color: rgb(4, 32, 73);">
+          <div class="col-md-8 text-center mt-5 mb-5">
+               <h1 style=" color:aliceblue; font-weight:bolder ;font-size: 55px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; ">Request a Consultation</h1>
+                 <p style="font-size:25px; font-weight:bolder;color:rgb(18, 15, 216);">
+                  
+                    Schedule a call  today and one of our experts will be happy to help you
+                 </p>
+                 <div class="mb-3">
+                 
+                  <input type="name" class="form-control" id="exampleInputPassword1" placeholder="Enter your name here..." style="background-color: rgb(4, 32, 73); color:white">
+                </div>
+                <div class="mb-3">
+                 
+                  <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Enter your Email Address here ..." style="background-color: rgb(4, 32, 73); color:white">
+                </div>
+                <div class="mb-3">
+                 
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your phone number here..." style="background-color: rgb(4, 32, 73); color:white">
+                </div>
+                <input type="submit" value="Submit">
+                <p class="mb-5" style="color: aliceblue;">
+                  By clicking Send Request, you agree to our <span style="font-size: 20px; border-bottom: 2px solid white;"> Terms of Service</span>  and acknowledge receipt of the <span style="font-size: 20px; border-bottom: 2px solid white;"> Privacy Notice.</span> 
+                  </p>
+                
+                
+
+              </div>
+          
+        </div>
+        <div class="row justify-content-center bg-primary text-light">
+         
+           <div class="col-md-2 mt-5 mb-5">
+           
+             <ul class="mt-5" style="line-height: 40px; list-style-type: none; ">
+              <h4 >Products</h4>
+              <li>
+                Shared hosting
+              </li>
+              <li>
+                VPS hosting
+              </li>
+              <li>
+                Dedicated hosting
+              </li>
+              <li>
+                Reseller hosting
+              </li>
+              <li>
+                WordPress hosting
+              </li>
+              <li>
+                WordPress hosting
+              </li>
+              <li>
+                WooCommerce hosting
+              </li>
+             </ul>
+          </div>
+          <div class="col-md-2  mt-5 mb-5">
+          
+            <ul class="mt-5" style="line-height: 40px; list-style-type: none;">
+              <h4>Programs</h4>
+
+              <li>
+                Shared hosting
+              </li>
+              <li>
+                VPS hosting
+              </li>
+              <li>
+                Dedicated hosting
+              </li>
+              <li>
+                Reseller hosting
+              </li>
+              <li>
+                WordPress hosting
+              </li>
+              <li>
+                WordPress hosting
+              </li>
+              <li>
+                WooCommerce hosting
+              </li>
+             </ul>
+          </div>
+          <div class="col-md-2  mt-5 mb-5">
+          
+            <ul  class="mt-5" style="line-height: 40px; list-style-type: none;">
+              <h4>Support</h4>
+
+              <li>
+                Shared hosting
+              </li>
+              <li>
+                VPS hosting
+              </li>
+              <li>
+                Dedicated hosting
+              </li>
+              <li>
+                Reseller hosting
+              </li>
+              <li>
+                WordPress hosting
+              </li>
+              <li>
+                WordPress hosting
+              </li>
+              <li>
+                WooCommerce hosting
+              </li>
+             </ul>
+          </div>
+          <div class="col-md-2  mt-5 mb-5">
+         
+            <ul class="mt-5" style="line-height: 40px; list-style-type: none;">
+              <h4>Company</h4>
+
+              <li>
+                Shared hosting
+              </li>
+              <li>
+                VPS hosting
+              </li>
+              <li>
+                Dedicated hosting
+              </li>
+              <li>
+                Reseller hosting
+              </li>
+              <li>
+                WordPress hosting
+              </li>
+              <li>
+                WordPress hosting
+              </li>
+              <li>
+                WooCommerce hosting
+              </li>
+             </ul>
+          </div>
+          <div class="col-md-4 mt-5 mb-5">
+           
+            <div class="mt-5"  style=" color: aliceblue;">
+              <p style="  font-size: 20px;"> <i class="bi bi-border-all">bluehost</p></i> 
+            </div>
+            <p>
+              © 2002-2023 bluehost inc. all rights reserved.
+            </p>
+            <h4>
+              1800-419-4426
+            </h4>
+            <h4>
+              +1800-419-4426 
+            </h4>
+            <div>
+              <i class="bi bi-facebook text-primary"></i>
+              <i class="bi bi-twitter  text-primary"></i>
+            </div>
+          
+          </div>
+          </div>
+        </div>
+
+        
+       
+
+
+     
+       
+          
+
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+    </html>
+    
